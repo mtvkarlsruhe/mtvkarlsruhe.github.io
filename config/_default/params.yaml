@@ -1,8 +1,10 @@
 ######################## custom scripts & styles ####################
 
 # Add custom assets relative to /static or via https
-logo_on_white: "/img/logo-b.svg"
-logo_on_black: "/img/logo-w.svg"
+# Logo images intentionally left empty so the header/footer render the site
+# title text ("MTV Karlsruhe Tennis") instead of a logo image.
+logo_on_white: ""
+logo_on_black: ""
 custom_js: []
 custom_css: []
 
