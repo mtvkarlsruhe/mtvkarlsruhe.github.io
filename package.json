@@ -1,0 +1,23 @@
+{
+  "name": "mtv-karlsruhe",
+  "version": "1.0.0",
+  "description": "MTV Karlsruhe website",
+  "main": "none.js",
+  "scripts": {
+    "build": "hugo --environment=production && npm_config_yes=true npx pagefind --site public",
+    "start": "hugo serve --logLevel info --configDir=config --buildDrafts --buildFuture --ignoreCache --disableFastRender --gc  --printI18nWarnings --printMemoryUsage --printPathWarnings --printUnusedTemplates --templateMetrics --templateMetricsHints",
+    "dev": "npm run start",
+    "dev:build": "hugo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
