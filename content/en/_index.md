@@ -1,17 +1,20 @@
 ---
-title: Dot Org Theme Demo
-description: This is the demo site for Dot Org Theme. The title description and images front matter is required for meta og content.
+title: Tennisabteilung MTV Karlsruhe
+description: Die Tennisabteilung des MTV Karlsruhe – rund 130 Mitglieder, 7 Sandplätze und eine Tennishalle mitten im Grünen. Spielen, trainieren und Turniere erleben.
 showHeader: false
 ---
 
 {{< columns count=2 >}}
 {{< column >}}
-# A free & open source theme for Hugo
+# Herzlich willkommen bei der Tennisabteilung!
 
 {{< intro >}}
-The [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) has been created for the [Hugo CMS](https://gohugo.io), and has been developed and released by the [CNCF](https://www.cncf.io), part of the [Linux Foundation](https://www.linuxfoundation.org).
+Die Tennisabteilung ist mit rund 130 Mitgliedern und vielen aktiven Mannschaften eine der größten Abteilungen des MTV Karlsruhe. Ob Anfänger oder Wettkampfspieler – bei uns ist jede und jeder herzlich willkommen.
 {{< /intro >}}
 
+Unsere Anlage liegt mitten im Grünen am Kanalweg und bietet **7 Sandplätze** sowie eine **2-Feld-Tennishalle**, die das ganze Jahr über bespielbar ist. Nach dem Spiel lädt unser **Restaurant mit Biergarten** zum Verweilen ein.
+
+{{< button link="https://www.mtv-karlsruhe.de/platzbuchung/plan-3/" text="Platz buchen" >}}
 {{< /column >}}
 {{< column >}}
 {{< spacer >}}
@@ -19,66 +22,41 @@ The [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) has been created
 {{< /column >}}
 {{< /columns >}}
 
-{{< columns count=3 >}}
-{{< column >}}
-{{< img src="/img/placeholder.svg" >}}
-### Free & open source
-The Dot-Org theme is a free and open source theme for Hugo CMS. Use it however you want 🏠 🧱
-{{< /column >}}
-{{< column >}}
-{{< img src="/img/placeholder.svg" >}}
-### Fast & full-featured
-HTML/CSS/JS written from scratch. No frameworks, no libraries, perfect site speed scores 🚀 🧨
-{{< /column >}}
-{{< column >}}
-{{< img src="/img/placeholder.svg" >}}
-### Accessible & multilingual
-Supports multiple languages out of the box. Aims to comply with WCAG 2.1 standards 🌐 👁️‍🗨️
-{{< /column >}}
-{{< /columns >}}
-{{< spacer 20 >}}
-## Embed videos without comprimising page speed
-
-{{< youtube_enhanced id="b3ta7fOo6Mo" >}}
-
 {{< spacer 20 >}}
 
 {{< cards count=3 >}}
 {{< card >}}
-#### See all features
-Dot Org is loaded with shortcodes to make it easy for you to construct pages and content however you want.
+{{< img src="/img/placeholder.svg" >}}
+### Mannschaften
+Damen-, Herren- und Mixed-Mannschaften spielen für den MTV in den Ligen. Lust mitzumischen?
 {{< spacer 5 >}}
-{{< button link="/demo-page" text="Demo Page" >}}
+{{< button link="/mannschaften" text="Zu den Mannschaften" >}}
 {{< /card >}}
 {{< card >}}
-#### Frequently Asked Qs
-A special Frequently Asked Questions "FAQ" layout loads each post inside an accordion for quick navigation.
+{{< img src="/img/placeholder.svg" >}}
+### Training
+Von den ersten Schlägen bis zum Feinschliff – unser Cheftrainer Lorenzo Sonnet begleitet alle Spielstärken.
 {{< spacer 5 >}}
-{{< button link="/faq" text="FAQs" >}}
+{{< button link="/training" text="Zum Training" >}}
 {{< /card >}}
 {{< card >}}
-#### Full Blog ready to go
-The built-in blog functionality comes with reusable author data file, breadcrumbs and pagination.
+{{< img src="/img/placeholder.svg" >}}
+### Plätze & Buchung
+7 Sandplätze und eine Tennishalle. Mitglieder und Gäste buchen bequem online.
 {{< spacer 5 >}}
-{{< button link="/blog" text="Blog" >}}
+{{< button link="/plaetze" text="Plätze & Buchung" >}}
 {{< /card >}}
 {{< /cards >}}
+
 {{< spacer 20 >}}
 
-### Full feature list:
+## Aktuelles
 
-- Modern - simple yet effective modern design
-- Responsive - works on mobile through to desktop, mobile first design
-- Accessible - design and markup comply with WCAG 2.1 AA guidelines
-- Fast - HTML/CSS/JS written from scratch to be as fast as possible without relying on frameworks or libraries
-- Performance - perfect 100 Lighthouse/PageSpeed Insight scores :rocket:
-- Multilingual - ready to support multiple languages of content
-- Mega Menu - large menu with dropdown sections, custom footer menu
-- Search - PageFind built in
-- Blog - blog posts ready to go, post authors linked to Twitter, Edit page link.
-- FAQ accordion - FAQ page with accordion structure
-- Custom Shortcodes - Easily insert advanced features with simple shortcodes
-- Social links - Insert URLs to activate
-- Google Analytics - Add tracking with just the account ID
-- Custom JS and CSS - Easily insert custom HTML, JS and CSS in to the theme
-- Branding - Open Graph OG content, favicons
+- **MTV Karlsruhe Open 2026:** 28.–31. Mai 2026 – unser beliebtes Tennisturnier geht in die nächste Runde.
+- **Sandplätze geöffnet:** Seit dem 18. Mai 2026 sind unsere Plätze auch für Gastspielerinnen und Gastspieler geöffnet.
+- **Kleiner Karl-Cup:** Unser LK-Tagesturnier rund um Tennis, Beach-Tennis und gute Stimmung.
+
+{{< spacer 10 >}}
+
+{{< button link="/turniere" text="Alle Turniere" >}}
+{{< button link="/kontakt" style="secondary" text="Kontakt & Abteilungsleitung" >}}

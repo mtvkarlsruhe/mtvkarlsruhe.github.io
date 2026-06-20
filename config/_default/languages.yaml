@@ -1,62 +1,51 @@
 en:
-  label: English
+  label: Deutsch
   weight: 1
   ### copyright (markdown can be used) ###
   copyright: "Copyright &copy; {{< current_year >}} MTV Karlsruhe. Alle Rechte vorbehalten."
-  title: "MTV Karlsruhe"
+  title: "MTV Karlsruhe Tennis"
   params:
-    description: "MTV Karlsruhe"
+    description: "Tennisabteilung des MTV Karlsruhe"
     ### accessibility ###
     accessibility:
-      skip_text: "Skip to content"
-      help_text: "Accessibility Statement"
-      help_url: "/example-page/"
+      skip_text: "Zum Inhalt springen"
+      help_text: "Kontakt"
+      help_url: "/kontakt/"
     ### calls to action ###
     main_cta:
-      text: "Join"
-      link: "/example-page/"
+      text: "Platz buchen"
+      link: "https://www.mtv-karlsruhe.de/platzbuchung/plan-3/"
     footer_cta:
-      text: "Join us"
-      link: "/example-page/"
-    github_edit: "Edit this page on GitHub"
-  ### example menu showing children ###
+      text: "Mitglied werden"
+      link: "/kontakt/"
+    github_edit: "Diese Seite auf GitHub bearbeiten"
   menu:
     main:
-    - identifier: "about"
-      name: "About"
-      url: "/example-page/"
+    - identifier: "mannschaften"
+      name: "Mannschaften"
+      url: "/mannschaften/"
       weight: 1
-    - identifier: "child-1"
-      name: "Example Child Page"
-      url: "/example-page/"
-      weight: 1
-      post: "Nulla consequat massa quis enim. Donec pede justo."
-      parent: "about"
-    - identifier: "child-2"
-      name: "Example Child Page"
-      url: "/example-page/"
+    - identifier: "training"
+      name: "Training"
+      url: "/training/"
       weight: 2
-      post: "Aenean commodo ligula get dolor. Aenean massa."
-      parent: "about"
-    - identifier: "child-3"
-      name: "Example External page"
-      url: "https://cncf.io?ref=dot-org"
+    - identifier: "plaetze"
+      name: "Plätze & Buchung"
+      url: "/plaetze/"
       weight: 3
-      post: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo."
-      parent: "about"
-    - identifier: "demo-page"
-      name: "Demo Page"
-      url: "/demo-page/"
-      weight: 2
-    - identifier: "faq"
-      name: "FAQs"
-      url: "/faq/"
-      weight: 3
-    - identifier: "blog"
-      name: "Blog"
-      url: "/blog/"
+    - identifier: "turniere"
+      name: "Turniere"
+      url: "/turniere/"
       weight: 4
-    - identifier: "example"
-      name: "External"
-      url: "https://cncf.io?ref=dot-org"
+    - identifier: "arbeitseinsaetze"
+      name: "Arbeitseinsätze"
+      url: "/arbeitseinsaetze/"
       weight: 5
+    - identifier: "kontakt"
+      name: "Kontakt"
+      url: "/kontakt/"
+      weight: 6
+    - identifier: "hauptverein"
+      name: "MTV Karlsruhe"
+      url: "https://www.mtv-karlsruhe.de/"
+      weight: 7
