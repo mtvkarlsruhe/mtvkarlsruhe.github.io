@@ -1,7 +1,6 @@
 ######################## production configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL: https://mtv-karlsruhe.github.io/
-googleAnalytics:
+baseURL: https://mtvkarlsruhe.github.io/
 enableRobotsTXT: true
 build:
   writeStats: true
