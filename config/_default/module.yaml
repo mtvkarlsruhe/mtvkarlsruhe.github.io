@@ -1,0 +1,4 @@
+imports:
+  # llms.txt / llms-full.txt generator
+  # https://github.com/gethugothemes/hugo-modules/tree/master/llms-txt
+  - path: github.com/gethugothemes/hugo-modules/llms-txt

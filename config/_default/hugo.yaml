@@ -30,3 +30,20 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+######################## llms.txt output ####################
+# Generate /llms.txt and /llms-full.txt via the gethugothemes llms-txt module.
+outputs:
+  home: ["HTML", "RSS", "llms", "llmsfull"]
+
+outputFormats:
+  llms:
+    baseName: "llms"
+    mediaType: "text/plain"
+    isPlainText: true
+    notAlternative: true
+  llmsfull:
+    baseName: "llms-full"
+    mediaType: "text/plain"
+    isPlainText: true
+    notAlternative: true

@@ -38,3 +38,11 @@ social_links:
 sticky_header: true
 # Enable search in header UI
 show_search: true
+
+######################## llms.txt ####################
+# Config for the gethugothemes/hugo-modules/llms-txt module.
+llms:
+  enable: true
+  enable_full: true
+  include: []
+  exclude: []
