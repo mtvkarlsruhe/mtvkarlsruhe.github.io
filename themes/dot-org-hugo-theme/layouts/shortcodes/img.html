@@ -28,6 +28,51 @@
     {{ $alt = $nameCapitalized | safeHTMLAttr }}
 {{ end }}
 
+{{/* Derive intrinsic width/height when not supplied so the browser can
+     reserve the correct aspect-ratio box and avoid layout shift (CLS).
+     Combined with the theme's `img { max-width: 100%; height: auto }`
+     rule this stays fully responsive on mobile and desktop. */}}
+{{ if and $src (or (not $width) (not $height)) }}
+  {{ $isSVG := eq (path.Ext $src | lower) ".svg" }}
+
+  {{/* Try to resolve the image as an asset or page-bundle resource first. */}}
+  {{ $res := or (.Page.Resources.GetMatch $src) (resources.Get $src) }}
+
+  {{ if and $res (not $isSVG) }}
+    {{/* Raster resource: Hugo can read the decoded dimensions. */}}
+    {{ if not $width }}{{ $width = string $res.Width }}{{ end }}
+    {{ if not $height }}{{ $height = string $res.Height }}{{ end }}
+  {{ else if $isSVG }}
+    {{/* Read the SVG markup (from a resource or a /static file) and
+         parse its width/height attributes, falling back to the viewBox. */}}
+    {{ $svg := "" }}
+    {{ with $res }}{{ $svg = .Content }}{{ end }}
+    {{ if not $svg }}
+      {{ $path := printf "static/%s" (strings.TrimPrefix "/" $src) }}
+      {{ if fileExists $path }}{{ $svg = os.ReadFile $path }}{{ end }}
+    {{ end }}
+    {{ with $svg }}
+      {{ $tag := index (findRE "<svg[^>]*>" . 1) 0 }}
+      {{ with $tag }}
+        {{ $w := index (findRE `width="[0-9.]+"` . 1) 0 }}
+        {{ $h := index (findRE `height="[0-9.]+"` . 1) 0 }}
+        {{ if and (not $width) $w }}{{ $width = ($w | replaceRE "[^0-9]" "") }}{{ end }}
+        {{ if and (not $height) $h }}{{ $height = ($h | replaceRE "[^0-9]" "") }}{{ end }}
+        {{ if or (not $width) (not $height) }}
+          {{ $vb := index (findRE `viewBox="[0-9. ]+"` . 1) 0 }}
+          {{ with $vb }}
+            {{ $nums := findRE "[0-9.]+" . }}
+            {{ if ge (len $nums) 4 }}
+              {{ if not $width }}{{ $width = (index $nums 2 | replaceRE "[^0-9]" "") }}{{ end }}
+              {{ if not $height }}{{ $height = (index $nums 3 | replaceRE "[^0-9]" "") }}{{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ if $src }}
 
 {{ if $caption}}
@@ -35,8 +80,8 @@
   {{ end }}
   <img
     src="{{ $src }}"
-    width="{{ $width }}"
-    height="{{ $height }}"
+    {{ with $width }}width="{{ . }}"{{ end }}
+    {{ with $height }}height="{{ . }}"{{ end }}
     alt="{{ $alt | safeHTMLAttr }}"
     loading="{{ $loading }}"
     >
