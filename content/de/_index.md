@@ -6,7 +6,7 @@ showHeader: false
 
 {{< columns count=2 >}}
 {{< column >}}
-# Herzlich willkommen bei der Tennisabteilung!
+# Willkommen beim MTV Karlsruhe Tennis!
 
 {{< intro >}}
 Die Tennisabteilung ist mit rund 130 Mitgliedern und vielen aktiven Mannschaften eine der größten Abteilungen des MTV Karlsruhe. Ob Anfänger oder Wettkampfspieler – bei uns ist jede und jeder herzlich willkommen.
