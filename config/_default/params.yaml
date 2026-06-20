@@ -39,7 +39,7 @@ social_links:
 # Makes the header sticky on tall screens
 sticky_header: true
 # Enable search in header UI
-show_search: true
+show_search: false
 
 ######################## llms.txt ####################
 # Config for the gethugothemes/hugo-modules/llms-txt module.
