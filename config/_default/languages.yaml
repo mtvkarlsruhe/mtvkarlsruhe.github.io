@@ -1,6 +1,7 @@
-en:
+de:
   label: Deutsch
   weight: 1
+  locale: de-DE
   ### copyright (markdown can be used) ###
   copyright: "Copyright &copy; {{< current_year >}} MTV Karlsruhe. Alle Rechte vorbehalten."
   title: "MTV Karlsruhe Tennis"
