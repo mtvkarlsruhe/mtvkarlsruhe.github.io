@@ -4,6 +4,11 @@
 {{ $caption := .Get "caption" }}
 {{ $loading := .Get "loading" | default "lazy" }}
 
+{{/* Eager images are above the fold (LCP candidates): hint the browser to
+     fetch them first and decode synchronously. Lazy images get "low" so they
+     never compete with the LCP image for bandwidth. */}}
+{{ $fetchpriority := .Get "fetchpriority" | default (cond (eq $loading "eager") "high" "low") }}
+
 {{/* Extract the file name from the path */}}
 {{ $filenameWithExt := path.Base $src }}
 
@@ -84,6 +89,8 @@
     {{ with $height }}height="{{ . }}"{{ end }}
     alt="{{ $alt | safeHTMLAttr }}"
     loading="{{ $loading }}"
+    fetchpriority="{{ $fetchpriority }}"
+    {{ if eq $loading "eager" }}decoding="sync"{{ else }}decoding="async"{{ end }}
     >
   {{ if $caption}}
     <figcaption>{{ $caption | markdownify }}</figcaption>
