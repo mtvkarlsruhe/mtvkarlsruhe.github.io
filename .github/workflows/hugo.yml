@@ -25,6 +25,10 @@ jobs:
     env:
       HUGO_VERSION: 0.163.3
       HUGO_ENVIRONMENT: production
+      # The GitHub runner's Node 24 sandbox exports NODE_OPTIONS=--permission,
+      # which leaks into the Node process Hugo spawns for PostCSS and crashes it
+      # ("node: bad option: --permission"). Clear it for this job.
+      NODE_OPTIONS: ""
     steps:
       - name: Install Hugo CLI (extended)
         run: |
@@ -39,9 +43,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
       - name: Install Node dependencies (PostCSS)
         run: npm ci
       - name: Build with Hugo
