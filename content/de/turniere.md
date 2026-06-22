@@ -13,6 +13,8 @@ Unser beliebtes Tennisturnier geht **vom 28. bis 31. Mai 2026** in die nächste 
 
 Ab dem **18. Mai 2026** sind unsere Sandplätze auch für Gastspielerinnen und Gastspieler geöffnet.
 
+{{< button link="https://www.tennis.de/spielen/spielbetrieb/turniersuche.html#detail/822579" text="Zur Ausschreibung & Anmeldung" >}}
+
 ## Kleiner Karl-Cup
 
 Der Kleine Karl-Cup ist unser **LK-Tagesturnier**. In seiner zweiten Auflage begeisterte er rund 40 Teilnehmende und bot neben dem Tennis auch Beach-Tennis und eine Getränkebar – unterstützt von lokalen Partnern.

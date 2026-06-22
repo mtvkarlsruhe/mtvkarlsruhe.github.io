@@ -7,18 +7,17 @@ description: Damen-, Herren- und Mixed-Mannschaften der Tennisabteilung des MTV 
 Tennis lebt vom Miteinander. In der Tennisabteilung des MTV Karlsruhe treten Damen-, Herren- und Mixed-Mannschaften in den Ligen an – vom Nachwuchs bis zu den Aktiven.
 {{< /intro >}}
 
-## Unsere Teams
+## Unsere Teams – Saison 2026
 
-Aktuell schicken wir unter anderem die folgenden Mannschaften in den Spielbetrieb:
+Diese Mannschaften schicken wir aktuell in den Spielbetrieb – mit den jeweiligen Mannschaftsführerinnen und Mannschaftsführern als Ansprechpartner:innen.
 
-- **Damen 1**
-- **Damen 30**
-- **Herren 1**
-- **Herren 2**
-- **Herren 3**
-- **Herren 4**
-- **Herren 40**
-- **Herren 65**
+{{< mannschaften >}}
+
+## Tabellen & Ergebnisse live
+
+Alle Mannschaften, Tabellen und Ergebnisse findest du jederzeit aktuell im offiziellen Mannschaftswidget von tennis.de:
+
+{{< mannschaftswidget verein="20600" >}}
 
 ## Mitspielen
 

@@ -1,0 +1,12 @@
+{{- /*
+  Project override of the theme's button shortcode.
+  Adds: external links (http/https) open in a new tab with rel="noopener",
+  matching the behaviour of the team links in the mannschaften shortcode.
+  Internal links (e.g. /kontakt) still open in the same tab.
+*/ -}}
+{{- $link := .Get "link" -}}
+{{- $style := .Get "style" -}}
+{{- $class := "button" -}}
+{{- if eq $style "secondary" }}{{ $class = "button secondary" }}{{ else if eq $style "tertiary" }}{{ $class = "button tertiary" }}{{ end -}}
+{{- $external := strings.HasPrefix $link "http" -}}
+<a href="{{ $link }}" class="{{ $class }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ .Get "text" }}</a>

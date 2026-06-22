@@ -1,0 +1,28 @@
+{{- /*
+  tennis.de Mannschaftswidget — offizielles Einbettungs-Widget des DTB.
+  Anleitung: https://www.tennis.de/news/spielen/2025/das-tennis-de-mannschaftswidget-fuer-deine-vereinshomepage-.html
+
+  Parameter:
+    verband    – Landesverband-Kürzel (Default: BAD = Badischer Tennisverband)
+    verein     – offizielle Vereinsnummer (VNr), z. B. 20600 für MTV Karlsruhe
+                 (NICHT die nuLiga-Team-ID 18163 — die wird vom Widget abgelehnt)
+    linkfarbe  – Linkfarbe als Hex ohne # (Default: 4d8307 = Vereinsgrün)
+    height     – Höhe in px (Default: 800)
+
+  Usage: {{< mannschaftswidget verein="20600" >}}
+
+  Bewusst NICHT der Theme-eigene `iframe`-Shortcode: der erzwingt ein
+  3:2-Seitenverhältnis mit overflow:hidden (für Videos) und würde das
+  scrollbare Widget abschneiden.
+*/ -}}
+{{- $verband := .Get "verband" | default "BAD" -}}
+{{- $verein := .Get "verein" -}}
+{{- $farbe := .Get "linkfarbe" | default "4d8307" -}}
+{{- $height := .Get "height" | default "800" -}}
+{{- $src := printf "https://services.tennis.de/extern/tennisdeteamsearch.zul?verband=%s&verein=%s&linkfarbe=%s" $verband $verein $farbe -}}
+<iframe
+  class="team-widget"
+  src="{{ $src | safeURL }}"
+  style="width:100%;height:{{ $height }}px;border:0;"
+  loading="lazy"
+  title="Mannschaften des MTV Karlsruhe bei tennis.de"></iframe>

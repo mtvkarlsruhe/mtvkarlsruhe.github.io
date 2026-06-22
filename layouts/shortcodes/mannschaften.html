@@ -1,0 +1,36 @@
+{{- /*
+  Mannschaften — reads entries from data/mannschaften.yaml and renders a card
+  per team with the Mannschaftsführer:in. Tabellen und Ergebnisse liefert das
+  tennis.de-Widget weiter unten auf der Seite (Shortcode `mannschaftswidget`).
+
+  Usage: {{< mannschaften >}}
+
+  Note: the phone number is only shown when `phone` is set in the data file —
+  vorerst bleibt es leer (anonym).
+
+  Rules are scoped under .teams-* parents so they outweigh the theme's
+  `.content div { width:100% }` rule.
+*/ -}}
+{{- $teams := site.Data.mannschaften -}}
+{{- if $teams -}}
+<div class="teams-grid">
+  {{- range $t := $teams -}}
+  <div class="teams-grid__card">
+    <h3 class="teams-grid__name">{{ $t.name }}</h3>
+    {{- with $t.fuehrer }}
+    <p class="teams-grid__mf">
+      <span class="teams-grid__label">Mannschaftsführer:in</span>
+      {{ . }}{{ with $t.phone }} · <a href="tel:{{ . | replaceRE `[^+0-9]` `` }}">{{ . }}</a>{{ end }}
+    </p>
+    {{- end }}
+  </div>
+  {{- end -}}
+</div>
+<style>
+.teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0;}
+.teams-grid .teams-grid__card{display:flex;flex-direction:column;gap:.25rem;padding:1rem 1.25rem;border:1px solid #e2e2e2;border-radius:10px;background:#fff;}
+.teams-grid .teams-grid__name{margin:0;font-size:1.15rem;}
+.teams-grid .teams-grid__mf{margin:0;font-size:.95rem;}
+.teams-grid .teams-grid__label{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:#888;}
+</style>
+{{- end -}}
