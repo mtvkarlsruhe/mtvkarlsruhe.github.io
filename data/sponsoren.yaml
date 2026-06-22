@@ -1,0 +1,21 @@
+# Sponsoren & Partner der Tennisabteilung.
+# TODO: Platzhalter ersetzen. Logos unter static/img/sponsoren/ ablegen
+# und hier mit Pfad /img/sponsoren/<datei> referenzieren. url ist optional.
+- name: "Partner 1"
+  logo: "/img/placeholder.svg"
+  url: ""
+- name: "Partner 2"
+  logo: "/img/placeholder.svg"
+  url: ""
+- name: "Partner 3"
+  logo: "/img/placeholder.svg"
+  url: ""
+- name: "Partner 4"
+  logo: "/img/placeholder.svg"
+  url: ""
+- name: "Partner 5"
+  logo: "/img/placeholder.svg"
+  url: ""
+- name: "Partner 6"
+  logo: "/img/placeholder.svg"
+  url: ""

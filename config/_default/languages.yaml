@@ -14,50 +14,85 @@ de:
       help_url: "/kontakt/"
     ### calls to action ###
     main_cta:
-      text: "Platz buchen"
-      link: "https://www.mtv-karlsruhe.de/platzbuchung/plan-3/"
+      text: "Mitglied werden"
+      link: "/mitglied-werden/"
     footer_cta:
       text: "Mitglied werden"
-      link: "/kontakt/"
+      link: "/mitglied-werden/"
     github_edit: "Diese Seite auf GitHub bearbeiten"
   menu:
     main:
       - identifier: "abteilung"
         name: "Abteilung"
         weight: 1
+      - identifier: "ueber-uns"
+        name: "Über uns"
+        url: "/ueber-uns/"
+        parent: "abteilung"
+        weight: 0
+        post: "Anlage, Verein und Geschichte"
       - identifier: "mannschaften"
         name: "Mannschaften"
         url: "/mannschaften/"
         parent: "abteilung"
         weight: 1
         post: "Damen-, Herren- und Mixed-Teams"
+      - identifier: "jugend"
+        name: "Jugend"
+        url: "/jugend/"
+        parent: "abteilung"
+        weight: 2
+        post: "Tennis für Kinder und Jugendliche"
       - identifier: "training"
         name: "Training"
         url: "/training/"
         parent: "abteilung"
-        weight: 2
+        weight: 3
         post: "Für Anfänger und Fortgeschrittene"
       - identifier: "turniere"
         name: "Turniere"
         url: "/turniere/"
         parent: "abteilung"
-        weight: 3
+        weight: 4
         post: "MTV Karlsruhe Open & Karl-Cup"
+      - identifier: "galerie"
+        name: "Galerie"
+        url: "/galerie/"
+        parent: "abteilung"
+        weight: 5
+        post: "Eindrücke von Anlage und Vereinsleben"
       - identifier: "arbeitseinsaetze"
         name: "Arbeitseinsätze"
         url: "/arbeitseinsaetze/"
         parent: "abteilung"
-        weight: 4
+        weight: 6
         post: "Gemeinsam die Anlage pflegen"
       - identifier: "plaetze"
         name: "Plätze & Buchung"
         url: "/plaetze/"
         weight: 2
+      - identifier: "aktuelles"
+        name: "Aktuelles"
+        url: "/blog/"
+        weight: 3
       - identifier: "kontakt"
         name: "Kontakt"
         url: "/kontakt/"
-        weight: 3
+        weight: 4
       - identifier: "hauptverein"
         name: "MTV Karlsruhe"
         url: "https://www.mtv-karlsruhe.de/"
-        weight: 4
+        weight: 5
+    footer:
+      - identifier: "impressum"
+        name: "Impressum"
+        url: "/impressum/"
+        weight: 1
+      - identifier: "datenschutz"
+        name: "Datenschutz"
+        url: "/datenschutz/"
+        weight: 2
+      - identifier: "sponsoren"
+        name: "Sponsoren & Partner"
+        url: "/sponsoren/"
+        weight: 3

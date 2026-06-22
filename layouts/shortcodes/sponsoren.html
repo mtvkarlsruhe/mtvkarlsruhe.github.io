@@ -1,0 +1,74 @@
+{{- /*
+  Sponsoren & Partner — reads entries from data/sponsoren.yaml.
+
+  Usage:
+    {{< sponsoren >}}                 → moving bar (CSS marquee), e.g. homepage
+    {{< sponsoren layout="grid" >}}   → static grid, e.g. the Sponsoren page
+
+  Note: rules are scoped under .sponsor-* parents so they outweigh the theme's
+  `.content div { width:100% }` rule, which would otherwise stretch each tile
+  to full width and hide all but the first.
+*/ -}}
+{{- $base := site.Data.sponsoren -}}
+{{- $layout := .Get "layout" | default "marquee" -}}
+{{- if $base -}}
+{{- if eq $layout "grid" -}}
+<div class="sponsor-grid">
+  {{- range $s := $base -}}
+  {{- if $s.url -}}
+  <a class="sponsor-grid__item" href="{{ $s.url }}" target="_blank" rel="noopener">
+    <img src="{{ $s.logo }}" alt="{{ $s.name }}" loading="lazy">
+    <span class="sponsor-grid__name">{{ $s.name }}</span>
+  </a>
+  {{- else -}}
+  <div class="sponsor-grid__item">
+    <img src="{{ $s.logo }}" alt="{{ $s.name }}" loading="lazy">
+    <span class="sponsor-grid__name">{{ $s.name }}</span>
+  </div>
+  {{- end -}}
+  {{- end -}}
+</div>
+<style>
+.sponsor-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:2rem 1.5rem;align-items:center;margin:1rem 0;}
+.sponsor-grid .sponsor-grid__item{display:flex;flex-direction:column;align-items:center;gap:.5rem;text-decoration:none;}
+.sponsor-grid .sponsor-grid__item img{height:80px;width:auto;max-width:100%;object-fit:contain;display:block;}
+.sponsor-grid .sponsor-grid__name{font-size:.9rem;line-height:1.2;color:#555;text-align:center;}
+</style>
+{{- else -}}
+{{- $n := len $base -}}
+{{- /* Repeat the base list until one "set" is wide enough to fill the bar */ -}}
+{{- $repeat := int (math.Ceil (div 14.0 (float $n))) -}}
+{{- $set := slice -}}
+{{- range seq $repeat -}}{{- range $base -}}{{- $set = $set | append . -}}{{- end -}}{{- end -}}
+<section class="sponsor-marquee" aria-label="Sponsoren und Partner">
+  <div class="sponsor-marquee__track">
+    {{- range $copy := seq 2 -}}
+    {{- $hidden := gt $copy 1 -}}
+    {{- range $s := $set -}}
+    {{- if $s.url -}}
+    <a class="sponsor-marquee__item" href="{{ $s.url }}" target="_blank" rel="noopener"{{ if $hidden }} aria-hidden="true" tabindex="-1"{{ end }}>
+      <img src="{{ $s.logo }}" alt="{{ if $hidden }}{{ else }}{{ $s.name }}{{ end }}" loading="lazy">
+      <span class="sponsor-marquee__name">{{ $s.name }}</span>
+    </a>
+    {{- else -}}
+    <div class="sponsor-marquee__item"{{ if $hidden }} aria-hidden="true"{{ end }}>
+      <img src="{{ $s.logo }}" alt="{{ if $hidden }}{{ else }}{{ $s.name }}{{ end }}" loading="lazy">
+      <span class="sponsor-marquee__name">{{ $s.name }}</span>
+    </div>
+    {{- end -}}
+    {{- end -}}
+    {{- end -}}
+  </div>
+</section>
+<style>
+.sponsor-marquee{overflow:hidden;width:100%;max-width:100%;padding:1rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);}
+.sponsor-marquee .sponsor-marquee__track{display:flex;width:max-content;max-width:none;align-items:center;animation:sponsor-scroll 45s linear infinite;}
+.sponsor-marquee:hover .sponsor-marquee__track,.sponsor-marquee:focus-within .sponsor-marquee__track{animation-play-state:paused;}
+.sponsor-marquee .sponsor-marquee__item{flex:0 0 auto;width:auto;max-width:none;margin-right:3.5rem;display:flex;flex-direction:column;align-items:center;gap:.35rem;text-decoration:none;}
+.sponsor-marquee .sponsor-marquee__item img{height:64px;width:auto;max-width:200px;object-fit:contain;display:block;}
+.sponsor-marquee .sponsor-marquee__name{font-size:.85rem;line-height:1;color:#555;white-space:nowrap;}
+@keyframes sponsor-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){.sponsor-marquee{overflow-x:auto;}.sponsor-marquee .sponsor-marquee__track{animation:none;}}
+</style>
+{{- end -}}
+{{- end -}}

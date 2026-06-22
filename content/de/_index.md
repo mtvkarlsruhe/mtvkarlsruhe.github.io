@@ -52,11 +52,23 @@ Von den ersten Schlägen bis zum Feinschliff – unser Cheftrainer Lorenzo Sonne
 
 ## Aktuelles
 
-- **MTV Karlsruhe Open 2026:** 28.–31. Mai 2026 – unser beliebtes Tennisturnier geht in die nächste Runde.
-- **Sandplätze geöffnet:** Seit dem 18. Mai 2026 sind unsere Plätze auch für Gastspielerinnen und Gastspieler geöffnet.
-- **Kleiner Karl-Cup:** Unser LK-Tagesturnier rund um Tennis, Beach-Tennis und gute Stimmung.
+Ob Turniere, geöffnete Sandplätze oder Berichte aus dem Vereinsleben – die neuesten Neuigkeiten aus der Tennisabteilung findest du in unserem Aktuelles-Bereich.
 
 {{< spacer 10 >}}
 
-{{< button link="/turniere" text="Alle Turniere" >}}
-{{< button link="/kontakt" style="secondary" text="Kontakt & Abteilungsleitung" >}}
+{{< button link="/blog" text="Alle Neuigkeiten" >}}
+{{< button link="/turniere" style="secondary" text="Alle Turniere" >}}
+
+{{< spacer 20 >}}
+
+## Unsere Sponsoren & Partner
+
+Ein herzliches Dankeschön an alle, die unsere Abteilung unterstützen!
+
+{{< spacer 5 >}}
+
+{{< sponsoren >}}
+
+{{< spacer 10 >}}
+
+{{< button link="/sponsoren" text="Alle Sponsoren & Partner" >}}
