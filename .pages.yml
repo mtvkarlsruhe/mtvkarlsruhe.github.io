@@ -1,0 +1,30 @@
+media:
+  input: static/img
+  output: /img
+
+content:
+  - name: pages
+    label: Seiten
+    type: collection
+    path: content/de
+    filename: '{primary}.md'
+    view:
+      fields: [title, description]
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: description
+        label: Beschreibung
+        type: text
+        description: Wird für SEO und Vorschau verwendet.
+      - name: showHeader
+        label: Header anzeigen
+        type: boolean
+        default: true
+      - name: body
+        label: Inhalt
+        type: code
+        options:
+          language: markdown
