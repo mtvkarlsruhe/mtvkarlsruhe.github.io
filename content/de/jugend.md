@@ -25,7 +25,7 @@ Unser Cheftrainer **Lorenzo Sonnet** und sein Team begleiten den Nachwuchs von d
 
 ## Anmeldung & Ansprechpartner
 
-Du möchtest dein Kind anmelden oder hast Fragen zum Jugendtraining? Schreib uns an [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de) – wir helfen gerne weiter.
+Sie möchten Ihr Kind anmelden oder haben Fragen zum Jugendtraining? Schreiben Sie uns an [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de) – wir helfen gerne weiter.
 
 <!-- TODO: Jugendwart / verantwortliche Ansprechperson für die Jugend ergänzen. -->
 

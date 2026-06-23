@@ -15,12 +15,12 @@ Diese Mannschaften schicken wir aktuell in den Spielbetrieb – mit den jeweilig
 
 ## Tabellen & Ergebnisse live
 
-Alle Mannschaften, Tabellen und Ergebnisse findest du jederzeit aktuell im offiziellen Mannschaftswidget von tennis.de:
+Alle Mannschaften, Tabellen und Ergebnisse finden Sie jederzeit aktuell im offiziellen Mannschaftswidget von tennis.de:
 
 {{< mannschaftswidget verein="20600" >}}
 
 ## Mitspielen
 
-Du möchtest deine Tennisbegeisterung mit anderen teilen und gemeinsam die Liga aufmischen? Dann nimm bitte Kontakt mit unseren Mannschaftsführerinnen und Mannschaftsführern auf – wir freuen uns über jede Verstärkung.
+Sie möchten Ihre Tennisbegeisterung mit anderen teilen und gemeinsam die Liga aufmischen? Dann nehmen Sie bitte Kontakt mit unseren Mannschaftsführerinnen und Mannschaftsführern auf – wir freuen uns über jede Verstärkung.
 
 {{< button link="/kontakt" text="Kontakt aufnehmen" >}}

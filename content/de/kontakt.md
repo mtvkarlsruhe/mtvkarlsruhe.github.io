@@ -4,7 +4,7 @@ description: Kontakt und Abteilungsleitung der Tennisabteilung des MTV Karlsruhe
 ---
 
 {{< intro >}}
-Du hast Fragen zur Tennisabteilung, möchtest Mitglied werden oder in einer Mannschaft mitspielen? Wir freuen uns auf deine Nachricht.
+Sie haben Fragen zur Tennisabteilung, möchten Mitglied werden oder in einer Mannschaft mitspielen? Wir freuen uns auf Ihre Nachricht.
 {{< /intro >}}
 
 {{< columns count=2 >}}
@@ -27,7 +27,7 @@ Kanalweg 1
 
 ## Zum Hauptverein
 
-Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den gesamten Verein findest du auf der Hauptseite des [MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
+Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den gesamten Verein finden Sie auf der Hauptseite des [MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
 
 ## Anfahrt
 

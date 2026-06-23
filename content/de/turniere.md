@@ -4,7 +4,7 @@ description: Turniere der Tennisabteilung des MTV Karlsruhe – die MTV Karlsruh
 ---
 
 {{< intro >}}
-Turniere gehören beim MTV Karlsruhe einfach dazu – ob als Spielerin, Zuschauer oder Unterstützer. Komm vorbei und sei dabei!
+Turniere gehören beim MTV Karlsruhe einfach dazu – ob als Spielerin, Zuschauer oder Unterstützer. Kommen Sie vorbei und seien Sie dabei!
 {{< /intro >}}
 
 ## MTV Karlsruhe Open
@@ -21,6 +21,6 @@ Der Kleine Karl-Cup ist unser **LK-Tagesturnier**. In seiner zweiten Auflage beg
 
 ## Mitmachen
 
-Du möchtest bei einem unserer Turniere als Spielerin, Zuschauer oder Unterstützer dabei sein? Dann melde dich bei uns.
+Sie möchten bei einem unserer Turniere als Spielerin, Zuschauer oder Unterstützer dabei sein? Dann melden Sie sich bei uns.
 
 {{< button link="/kontakt" text="Kontakt aufnehmen" >}}

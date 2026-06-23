@@ -52,7 +52,7 @@ Von den ersten Schlägen bis zum Feinschliff – unser Cheftrainer Lorenzo Sonne
 
 ## Aktuelles
 
-Ob Turniere, geöffnete Sandplätze oder Berichte aus dem Vereinsleben – die neuesten Neuigkeiten aus der Tennisabteilung findest du in unserem Aktuelles-Bereich.
+Ob Turniere, geöffnete Sandplätze oder Berichte aus dem Vereinsleben – die neuesten Neuigkeiten aus der Tennisabteilung finden Sie in unserem Aktuelles-Bereich.
 
 {{< spacer 10 >}}
 

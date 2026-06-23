@@ -4,7 +4,7 @@ description: Eindrücke von der Tennisanlage, den Mannschaften und Turnieren des
 ---
 
 {{< intro >}}
-Ein paar Eindrücke von unserer Anlage, dem Vereinsleben und unseren Turnieren. Schau vorbei – am schönsten ist es natürlich live am Kanalweg.
+Ein paar Eindrücke von unserer Anlage, dem Vereinsleben und unseren Turnieren. Schauen Sie vorbei – am schönsten ist es natürlich live am Kanalweg.
 {{< /intro >}}
 
 <!-- TODO: Platzhalter durch echte Fotos ersetzen (Anlage, Mannschaften, Turniere, Vereinsleben). Bilder z. B. unter /img/galerie/ ablegen. -->
@@ -37,7 +37,7 @@ Ein paar Eindrücke von unserer Anlage, dem Vereinsleben und unseren Turnieren. 
 
 {{< spacer 10 >}}
 
-Mehr aktuelle Bilder findest du auch auf unseren Social-Media-Kanälen:
+Mehr aktuelle Bilder finden Sie auch auf unseren Social-Media-Kanälen:
 
 - Instagram: [@mtvkarlsruhe_tennis](https://www.instagram.com/mtvkarlsruhe_tennis)
 - Facebook: [MtvKarlsruheTennis](https://www.facebook.com/MtvKarlsruheTennis)
