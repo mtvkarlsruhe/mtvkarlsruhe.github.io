@@ -22,15 +22,13 @@ Kanalweg 1
 
 - Instagram: [@mtvkarlsruhe_tennis](https://www.instagram.com/mtvkarlsruhe_tennis)
 - Facebook: [MtvKarlsruheTennis](https://www.facebook.com/MtvKarlsruheTennis)
-
-{{< button link="https://www.mtv-karlsruhe.de/platzbuchung/plan-3/" text="Platz buchen" >}}
 {{< /column >}}
 {{< /columns >}}
-
-## Anfahrt
-
-{{< iframe src="https://maps.google.com/maps?q=MTV+Karlsruhe+Tennis,+Kanalweg+1,+76133+Karlsruhe&output=embed" title="Karte der Tennisanlage MTV Karlsruhe am Kanalweg 1" height="450px" >}}
 
 ## Zum Hauptverein
 
 Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den gesamten Verein findest du auf der Hauptseite des [MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
+
+## Anfahrt
+
+{{< iframe src="https://maps.google.com/maps?q=MTV+Karlsruhe+Tennis,+Kanalweg+1,+76133+Karlsruhe&output=embed" title="Karte der Tennisanlage MTV Karlsruhe am Kanalweg 1" height="450px" >}}
