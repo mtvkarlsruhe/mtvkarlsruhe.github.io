@@ -1,0 +1,6 @@
+{{- /*
+  Default link render hook. Mirrors Hugo's built-in link rendering but pipes
+  the destination through `safeURL` so non-http(s) schemes such as `tel:` are
+  preserved. Without this, Go's URL filter rewrites them to "#ZgotmplZ".
+*/ -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>

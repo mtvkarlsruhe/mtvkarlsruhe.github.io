@@ -36,11 +36,11 @@ Nach dem Spiel lädt unser **Restaurant mit Biergarten** zum Verweilen ein.
 
 ## Kontakt & Anschrift
 
-MTV Gaststätte – Inhaberin Mirjana Pandurevic
-Kanalweg 1
+**MTV Gaststätte** – Inhaberin Mirjana Pandurevic\
+Kanalweg 1\
 76131 Karlsruhe
 
-**Telefon:** [0721 / 698755](tel:+49721698755)
+**Telefon:** [0721 / 698755](tel:+49721698755)\
 **Web:** [www.mtv-gaststaette.com](http://www.mtv-gaststaette.com/)
 
 Für Vereins- und Familienfeiern bitten wir um vorherige Reservierung.
