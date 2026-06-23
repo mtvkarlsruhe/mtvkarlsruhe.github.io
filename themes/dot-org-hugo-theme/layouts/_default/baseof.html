@@ -4,7 +4,8 @@
     <body class="{{ urlize .Type }} page-{{ .Kind }}">
         {{- partial "accessibility.html" . -}}
         {{- partial "header.html" . -}}
-        
+        {{- partial "hero.html" . -}}
+
         <main id="content" class="container wrap" {{ if .IsPage }}data-pagefind-body{{ end }}>
             {{ if ne .Params.showHeader false }}
                 <header>

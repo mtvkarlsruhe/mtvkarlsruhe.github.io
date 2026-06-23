@@ -1,0 +1,112 @@
+@use "variables";
+
+// Full-bleed hero banner shown below the header on every page.
+// `.hero` is the cropped band used on subpages; `.hero--home` expands it to
+// the tall homepage banner. See layouts/partials/hero.html.
+.hero {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--primary-800);
+
+    @media (min-width: variables.$min-desktop) {
+        height: 300px;
+    }
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background-position: center 30%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    // Gradient overlay keeps the overlaid text legible and anchors the credit.
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.05) 35%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+        pointer-events: none;
+    }
+
+    // --- Homepage: full banner -------------------------------------------
+    &--home {
+        height: 78vh;
+        min-height: 440px;
+        max-height: 760px;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        max-width: var(--container-width);
+        margin: 0 auto;
+        padding: 0 var(--gutter);
+        color: var(--white);
+        text-shadow: 0 1px 14px rgba(0, 0, 0, 0.5);
+    }
+
+    &__eyebrow {
+        margin: 0 0 0.5rem;
+        font-family: var(--condensed-font-family);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 1rem;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: var(--condensed-font-family);
+        font-weight: 700;
+        line-height: 1.02;
+        font-size: clamp(2.4rem, 6vw, 4.75rem);
+        // Optically left-align the capital "M" with the "T" of the eyebrow and
+        // tagline — Oswald's "M" has a larger left side-bearing that, at this
+        // size, makes the line look indented.
+        text-indent: -0.06em;
+    }
+
+    &__tagline {
+        margin: 0.9rem 0 0;
+        max-width: 42ch;
+        // Same condensed face as the eyebrow, but keep normal (mixed) case
+        // instead of the eyebrow's uppercase treatment.
+        font-family: var(--condensed-font-family);
+        text-transform: none;
+        font-size: clamp(1rem, 2.2vw, 1.4rem);
+        line-height: 1.35;
+    }
+
+    // --- Attribution ------------------------------------------------------
+    &__credit {
+        position: absolute;
+        z-index: 2;
+        right: 0.6rem;
+        bottom: 0.4rem;
+        margin: 0;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.85);
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: var(--white);
+        }
+    }
+}

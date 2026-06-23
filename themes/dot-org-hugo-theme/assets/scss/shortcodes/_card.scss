@@ -8,6 +8,8 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     padding: 40px 24px;
     border-radius: 10px;
     background: var(--white);
@@ -23,5 +25,11 @@
     .button {
         margin-top: 0;
         margin-bottom: 0;
+    }
+    // Push the final call-to-action to the bottom so buttons line up across
+    // cards of differing content length (cards stretch to equal height in the
+    // grid row).
+    > p:last-child {
+        margin-top: auto;
     }
 }

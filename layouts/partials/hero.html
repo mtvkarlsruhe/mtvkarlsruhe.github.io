@@ -1,0 +1,19 @@
+{{- /* Full-bleed hero banner. Tall on the homepage, cropped to a band on
+       subpages (driven by the `hero--home` modifier). Background image is
+       Hugo-processed to an optimized webp with a jpg fallback. */ -}}
+{{- $img := resources.Get "images/hero-court-aerial.jpg" -}}
+{{- if $img -}}
+  {{- $webp := $img.Resize "2400x webp q82" -}}
+  {{- $jpg := $img.Resize "2400x q82" -}}
+  <section class="hero{{ if .IsHome }} hero--home{{ end }}">
+    <div class="hero__bg" style="background-image: url('{{ $jpg.RelPermalink }}'); background-image: image-set(url('{{ $webp.RelPermalink }}') type('image/webp'), url('{{ $jpg.RelPermalink }}') type('image/jpeg'));"></div>
+    {{- if .IsHome -}}
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Tennisabteilung</p>
+      <p class="hero__title">MTV Karlsruhe</p>
+      <p class="hero__tagline">Tennis mitten im Grünen</p>
+    </div>
+    {{- end -}}
+    <p class="hero__credit">Foto: <a href="https://unsplash.com/@yente95?utm_source=mtv_karlsruhe&utm_medium=referral" target="_blank" rel="noopener nofollow">Yente Van Eynde</a> / <a href="https://unsplash.com/?utm_source=mtv_karlsruhe&utm_medium=referral" target="_blank" rel="noopener nofollow">Unsplash</a></p>
+  </section>
+{{- end -}}
