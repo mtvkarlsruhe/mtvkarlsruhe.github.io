@@ -55,12 +55,6 @@ de:
         parent: "abteilung"
         weight: 4
         post: "MTV Karlsruhe Open & Karl-Cup"
-      - identifier: "galerie"
-        name: "Galerie"
-        url: "/galerie/"
-        parent: "abteilung"
-        weight: 5
-        post: "Eindrücke von Anlage und Vereinsleben"
       - identifier: "arbeitseinsaetze"
         name: "Arbeitseinsätze"
         url: "/arbeitseinsaetze/"

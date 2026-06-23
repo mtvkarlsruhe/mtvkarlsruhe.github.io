@@ -41,10 +41,10 @@ Von den ersten Schlägen bis zum Feinschliff – unser Cheftrainer Lorenzo Sonne
 {{< /card >}}
 {{< card >}}
 {{< img src="/img/placeholder.svg" >}}
-### Plätze & Buchung
+### Anlage
 7 Sandplätze und eine Tennishalle. Mitglieder und Gäste buchen bequem online.
 {{< spacer 5 >}}
-{{< button link="/plaetze" text="Plätze & Buchung" >}}
+{{< button link="/plaetze" text="Zur Anlage" >}}
 {{< /card >}}
 {{< /cards >}}
 

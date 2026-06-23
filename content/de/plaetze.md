@@ -28,3 +28,19 @@ Die 2-Feld-Tennishalle ist im Winter und bei schlechtem Wetter bespielbar – wa
 
 - **Telefon:** [0721 / 691173](tel:+49721691173)
 - **Öffnungszeiten:** dienstags 9:00–12:00 Uhr und 15:00–17:00 Uhr (Winter) bzw. bis 18:00 Uhr (Sommer) sowie nach Vereinbarung
+
+## Eindrücke
+
+<!-- TODO: Platzhalter durch echte Fotos der Anlage ersetzen (Sandplätze, Halle, Clubhaus). Bilder z. B. unter /img/anlage/ ablegen. -->
+
+{{< columns count=3 >}}
+{{< column >}}
+{{< img src="/img/placeholder.svg" >}}
+{{< /column >}}
+{{< column >}}
+{{< img src="/img/placeholder.svg" >}}
+{{< /column >}}
+{{< column >}}
+{{< img src="/img/placeholder.svg" >}}
+{{< /column >}}
+{{< /columns >}}
