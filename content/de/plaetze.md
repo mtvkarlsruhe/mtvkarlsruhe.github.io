@@ -1,5 +1,5 @@
 ---
-title: Plätze & Buchung
+title: Anlage
 description: 7 Sandplätze und eine 2-Feld-Tennishalle beim MTV Karlsruhe. Buchung und Bezahlung erfolgen bequem über das Online-Buchungssystem.
 ---
 

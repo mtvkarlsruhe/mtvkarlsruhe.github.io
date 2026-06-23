@@ -30,7 +30,7 @@ de:
         url: "/ueber-uns/"
         parent: "abteilung"
         weight: 0
-        post: "Anlage, Verein und Geschichte"
+        post: "Verein und Geschichte"
       - identifier: "mannschaften"
         name: "Mannschaften"
         url: "/mannschaften/"
@@ -67,15 +67,27 @@ de:
         parent: "abteilung"
         weight: 6
         post: "Gemeinsam die Anlage pflegen"
+      - identifier: "plaetze"
+        name: "Anlage"
+        url: "/plaetze/"
+        parent: "abteilung"
+        weight: 7
+        post: "Unsere Plätze und die Anlage"
       - identifier: "gaststaette"
         name: "Gaststätte"
         url: "/gaststaette/"
         parent: "abteilung"
         weight: 8
         post: "Hausgemachte Küche und Biergarten"
-      - identifier: "plaetze"
-        name: "Plätze & Buchung"
-        url: "/plaetze/"
+      - identifier: "hauptverein"
+        name: "MTV Karlsruhe"
+        url: "https://www.mtv-karlsruhe.de/"
+        parent: "abteilung"
+        weight: 9
+        post: "Zum Hauptverein"
+      - identifier: "platzbuchung"
+        name: "Platzbuchung"
+        url: "https://www.mtv-karlsruhe.de/platzbuchung/"
         weight: 2
       - identifier: "aktuelles"
         name: "Aktuelles"
@@ -85,10 +97,6 @@ de:
         name: "Kontakt"
         url: "/kontakt/"
         weight: 4
-      - identifier: "hauptverein"
-        name: "MTV Karlsruhe"
-        url: "https://www.mtv-karlsruhe.de/"
-        weight: 5
     footer:
       - identifier: "impressum"
         name: "Impressum"
