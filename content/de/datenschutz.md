@@ -27,6 +27,10 @@ Die Suche auf dieser Website (Pagefind) arbeitet vollständig im Browser. Es wer
 
 Diese Website setzt keine Cookies zu Analyse- oder Marketingzwecken ein und bindet keine externen Tracking-Dienste ein.
 
+## Kontaktaufnahme
+
+Personenbezogene Daten, die du uns per E-Mail oder über ein Kontaktformular übermittelst, werden ausschließlich zur Bearbeitung und Beantwortung deiner Anfrage gespeichert und nicht ohne deine Einwilligung an Dritte weitergegeben.
+
 ## Externe Links und Dienste
 
 - **Social Media:** Wir verlinken auf unsere Profile bei [Instagram](https://www.instagram.com/mtvkarlsruhe_tennis) und [Facebook](https://www.facebook.com/MtvKarlsruheTennis). Beim Anklicken gelten die Datenschutzbestimmungen des jeweiligen Anbieters.

@@ -67,6 +67,12 @@ de:
         parent: "abteilung"
         weight: 6
         post: "Gemeinsam die Anlage pflegen"
+      - identifier: "gaststaette"
+        name: "Gaststätte"
+        url: "/gaststaette/"
+        parent: "abteilung"
+        weight: 8
+        post: "Hausgemachte Küche und Biergarten"
       - identifier: "plaetze"
         name: "Plätze & Buchung"
         url: "/plaetze/"
