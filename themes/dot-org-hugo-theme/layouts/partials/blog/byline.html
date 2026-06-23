@@ -1,7 +1,8 @@
 {{- $date := .Date.Format "January 2, 2006" }}
 {{- $allAuthors := .Site.Data.authors }}
 {{- $authorKey := .Params.author }}
-{{- $authorData := index $allAuthors $authorKey }}
+{{- $authorData := "" }}
+{{- with $authorKey }}{{ $authorData = index $allAuthors . }}{{ end }}
 
 <div class="blog-item__byline">
   <p>
