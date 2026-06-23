@@ -9,7 +9,11 @@ content:
     path: content/de
     filename: '{primary}.md'
     view:
-      fields: [title, description]
+      fields: [title, description, date]
+      sort: [title, date]
+      default:
+        sort: date
+        order: desc
     fields:
       - name: title
         label: Titel
@@ -19,6 +23,11 @@ content:
         label: Beschreibung
         type: text
         description: Wird für SEO und Vorschau verwendet.
+      - name: date
+        label: Datum
+        type: date
+        options:
+          format: yyyy-MM-dd
       - name: showHeader
         label: Header anzeigen
         type: boolean
