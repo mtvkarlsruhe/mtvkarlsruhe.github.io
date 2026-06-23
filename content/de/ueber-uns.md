@@ -21,6 +21,22 @@ Unsere Abteilung blickt auf eine lange Tradition zurück. *(Gründungsjahr und G
 <!-- TODO: Leitbild / Werte der Abteilung ergänzen. -->
 Tennis verbindet – sportlicher Ehrgeiz, Gemeinschaft und Freude am Spiel stehen bei uns im Mittelpunkt. *(Ausführliches Leitbild folgt.)*
 
+## Abteilungsleitung
+
+{{< responsive_table >}}
+| Name | Funktion |
+| ---- | -------- |
+| Lukas Berenbach | Abteilungsleiter |
+| Timo Knapp | stellv. Abteilungsleiter |
+| Lorenzo Sonnet | Cheftrainer |
+| Hendrik Pfau | Sportwart |
+| Marc Rappold | Arbeitseinsatz-Beauftragter |
+| Leonhard Özdemir | Vergnügungswart |
+| Max Eland | Turnier-Beauftragter |
+| Alexander Vogel | Homepage-Beauftragter |
+| Lina Lepp | Social-Media-Beauftragte |
+{{< /responsive_table >}}
+
 {{< spacer 10 >}}
 
 {{< button link="/mitglied-werden" text="Mitglied werden" >}}

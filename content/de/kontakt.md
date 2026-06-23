@@ -31,22 +31,6 @@ Kanalweg 1
 
 {{< iframe src="https://maps.google.com/maps?q=MTV+Karlsruhe+Tennis,+Kanalweg+1,+76133+Karlsruhe&output=embed" title="Karte der Tennisanlage MTV Karlsruhe am Kanalweg 1" height="450px" >}}
 
-## Abteilungsleitung
-
-{{< responsive_table >}}
-| Name | Funktion |
-| ---- | -------- |
-| Lukas Berenbach | Abteilungsleiter |
-| Timo Knapp | stellv. Abteilungsleiter |
-| Lorenzo Sonnet | Cheftrainer |
-| Hendrik Pfau | Sportwart |
-| Marc Rappold | Arbeitseinsatz-Beauftragter |
-| Leonhard Özdemir | Vergnügungswart |
-| Max Eland | Turnier-Beauftragter |
-| Alexander Vogel | Homepage-Beauftragter |
-| Lina Lepp | Social-Media-Beauftragte |
-{{< /responsive_table >}}
-
 ## Zum Hauptverein
 
 Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den gesamten Verein findest du auf der Hauptseite des [MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
