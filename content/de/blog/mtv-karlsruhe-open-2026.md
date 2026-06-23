@@ -2,7 +2,6 @@
 title: "MTV Karlsruhe Open 2026"
 description: "Unser beliebtes Tennisturnier geht vom 28. bis 31. Mai 2026 in die nächste Runde."
 date: 2026-06-01
-author: mtv
 ---
 
 Unser beliebtes Tennisturnier geht in die nächste Runde: Die **MTV Karlsruhe Open 2026** finden vom **28. bis 31. Mai 2026** auf unserer Anlage am Kanalweg statt.

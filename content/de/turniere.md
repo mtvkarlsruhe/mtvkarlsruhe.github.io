@@ -17,7 +17,7 @@ Ab dem **18. Mai 2026** sind unsere Sandplätze auch für Gastspielerinnen und G
 
 ## Kleiner Karl-Cup
 
-Der Kleine Karl-Cup ist unser **LK-Tagesturnier**. In seiner zweiten Auflage begeisterte er rund 40 Teilnehmende und bot neben dem Tennis auch Beach-Tennis und eine Getränkebar – unterstützt von lokalen Partnern.
+Der Kleine Karl-Cup ist unser **LK-Tagesturnier**. In seiner zweiten Auflage begeisterte er rund 40 Teilnehmende und bot neben dem Tennis auch Beach-Tennis und eine Getränkebar – unterstützt von lokalen Partnern wie der **Brauerei Moninger** und **Vom Fass**.
 
 ## Mitmachen
 
