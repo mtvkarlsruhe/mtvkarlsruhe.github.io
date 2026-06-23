@@ -1,10 +1,10 @@
 ---
 title: Anlage
-description: 7 Sandplätze und eine 2-Feld-Tennishalle beim MTV Karlsruhe. Buchung und Bezahlung erfolgen bequem über das Online-Buchungssystem.
+description: 7 Sandplätze und 2 Hallenplätze beim MTV Karlsruhe. Buchung und Bezahlung erfolgen bequem über das Online-Buchungssystem.
 ---
 
 {{< intro >}}
-Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen sowie eine 2-Feld-Tennishalle für die kalte Jahreszeit und schlechtes Wetter – so können Sie das ganze Jahr über spielen.
+Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen sowie 2 Hallenplätze für die kalte Jahreszeit und schlechtes Wetter – so können Sie das ganze Jahr über spielen.
 {{< /intro >}}
 
 ## Sandplätze
@@ -24,7 +24,7 @@ Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen sowie ein
 
 ## Tennishalle (Winter)
 
-Die 2-Feld-Tennishalle ist im Winter und bei schlechtem Wetter bespielbar – wahlweise als Winterabonnement oder als Einzelstunde. Für ein Winterabo wenden Sie sich bitte an die Geschäftsstelle:
+Die 2 Hallenplätze sind im Winter und bei schlechtem Wetter bespielbar – wahlweise als Winterabonnement oder als Einzelstunde. Für ein Winterabo wenden Sie sich bitte an die Geschäftsstelle:
 
 - **Telefon:** [0721 / 691173](tel:+49721691173)
 - **Öffnungszeiten:** dienstags 9:00–12:00 Uhr und 15:00–17:00 Uhr (Winter) bzw. bis 18:00 Uhr (Sommer) sowie nach Vereinbarung

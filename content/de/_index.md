@@ -12,7 +12,7 @@ showHeader: false
 Die Tennisabteilung ist mit rund 130 Mitgliedern und vielen aktiven Mannschaften eine der größten Abteilungen des MTV Karlsruhe. Ob Anfänger oder Wettkampfspieler – bei uns ist jede und jeder herzlich willkommen.
 {{< /intro >}}
 
-Unsere Anlage liegt mitten im Grünen am Kanalweg und bietet **7 Sandplätze** sowie eine **2-Feld-Tennishalle**, die das ganze Jahr über bespielbar ist. Nach dem Spiel lädt unsere [**Gaststätte mit Biergarten**](/gaststaette) zum Verweilen ein.
+Unsere Anlage liegt mitten im Grünen am Kanalweg und bietet **7 Sandplätze** sowie **2 Hallenplätze**, die das ganze Jahr über bespielbar sind. Nach dem Spiel lädt unsere [**Gaststätte mit Biergarten**](/gaststaette) zum Verweilen ein.
 
 {{< button link="https://www.mtv-karlsruhe.de/platzbuchung/plan-3/" text="Platz buchen" >}}
 {{< /column >}}

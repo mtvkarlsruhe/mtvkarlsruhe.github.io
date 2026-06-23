@@ -1,6 +1,6 @@
 ---
 title: Über uns
-description: Die Tennisabteilung des MTV Karlsruhe – rund 130 Mitglieder, 7 Sandplätze und eine 2-Feld-Tennishalle am Kanalweg mitten im Grünen.
+description: Die Tennisabteilung des MTV Karlsruhe – rund 130 Mitglieder, 7 Sandplätze und 2 Hallenplätze am Kanalweg mitten im Grünen.
 ---
 
 {{< intro >}}

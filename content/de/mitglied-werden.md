@@ -12,7 +12,7 @@ Lust, bei uns mitzuspielen? Als Mitglied der Tennisabteilung des MTV Karlsruhe n
 {{< cards count=3 >}}
 {{< card >}}
 ### Spielen
-Zugang zu 7 Sandplätzen mitten im Grünen und einer 2-Feld-Tennishalle für das ganze Jahr.
+Zugang zu 7 Sandplätzen mitten im Grünen und 2 Hallenplätzen für das ganze Jahr.
 {{< /card >}}
 {{< card >}}
 ### Training & Mannschaften
