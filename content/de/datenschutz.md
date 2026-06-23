@@ -33,8 +33,8 @@ Personenbezogene Daten, die Sie uns per E-Mail oder über ein Kontaktformular ü
 
 ## Externe Links und Dienste
 
-- **Social Media:** Wir verlinken auf unsere Profile bei [Instagram](https://www.instagram.com/mtvkarlsruhe_tennis) und [Facebook](https://www.facebook.com/MtvKarlsruheTennis). Beim Anklicken gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
-- **Platzbuchung:** Die Online-Platzbuchung erfolgt über ein [externes System des MTV Karlsruhe](https://www.mtv-karlsruhe.de/platzbuchung/plan-3/). Dort gelten die dortigen Datenschutzhinweise.
+- **Social Media:** Wir verlinken auf unsere Profile bei [Instagram](https://instagram.com/mtvkarlsruhe_tennis) und [Facebook](https://facebook.com/MtvKarlsruheTennis). Beim Anklicken gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
+- **Platzbuchung:** Die Online-Platzbuchung erfolgt über ein [externes System des MTV Karlsruhe](https://mtv-karlsruhe.de/platzbuchung/plan-3/). Dort gelten die dortigen Datenschutzhinweise.
 
 ## Ihre Rechte
 

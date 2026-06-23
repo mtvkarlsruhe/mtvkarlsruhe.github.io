@@ -1,0 +1,70 @@
+@use "../variables";
+
+// NOTE: Project override of the theme's shortcodes/_card.scss. Keep in sync
+// with the theme version if it changes. Project additions:
+//   * heading min-height on image-less cards, so description text starts at the
+//     same point across side-by-side cards (e.g. "Ihre Vorteile");
+//   * tighter gap between a card image and the heading/text below it.
+
+.cards {
+    display: grid;
+    row-gap: 32px;
+    column-gap: 3%;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    h2,
+    h3 {
+        margin-block-start: 0;
+        margin-block-end: 30px;
+        a {
+            text-decoration: none;
+        }
+    }
+    .button {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    // The image renders in its own <p>; tighten the gap to the heading/text
+    // below it (the default paragraph margin is too loose for a card widget).
+    p:has(img) {
+        margin-bottom: 10px;
+    }
+    // Push the final call-to-action to the bottom so buttons line up across
+    // cards of differing content length (cards stretch to equal height in the
+    // grid row).
+    > p:last-child {
+        margin-top: auto;
+    }
+}
+
+// Align the description start across image-less side-by-side cards (e.g.
+// "Ihre Vorteile") by reserving two heading lines, so a heading that wraps to
+// two lines doesn't push its description below the single-line ones.
+// (Below 600px cards stack full-width, so no alignment is needed; cards with
+// images keep their natural height so they gain no extra whitespace.)
+@media (min-width: 600px) {
+    .card:not(:has(img)) {
+        h2,
+        h3 {
+            min-height: 3em; // 2 lines at 150% line-height
+        }
+    }
+}
+
+// Justify the description text in image-less cards (e.g. "Ihre Vorteile"), so
+// each description fills the card width evenly. hyphens keep German words from
+// leaving large inter-word gaps. The button paragraph is left untouched.
+.card:not(:has(img)) p:not(:has(.button)) {
+    text-align: justify;
+    hyphens: auto;
+}

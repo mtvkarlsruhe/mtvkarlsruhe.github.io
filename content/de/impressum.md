@@ -9,8 +9,8 @@ description: Impressum der Tennisabteilung des MTV Karlsruhe.
 Kanalweg 1
 76131 Karlsruhe
 
-**Telefon:** [0721 691173](tel:+49721691173)
-**Fax:** 0721 696399
+**Telefon:** [+49 721 691173](tel:+49721691173)
+**Fax:** +49 721 696399
 **E-Mail:** [info@mtv-karlsruhe.de](mailto:info@mtv-karlsruhe.de)
 
 Die Tennisabteilung ist eine Abteilung des Männerturnvereins Karlsruhe 1881 e.V.

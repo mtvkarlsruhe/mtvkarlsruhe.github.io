@@ -15,7 +15,7 @@ In angenehmem Ambiente am Kanalweg, mitten im Grünen, erwartet euch frische, ha
 
 Nach dem Spiel lädt unser **Restaurant mit Biergarten** zum Verweilen ein.
 
-{{< button link="http://www.mtv-gaststaette.com/" text="Zur Webseite der Gaststätte" >}}
+{{< button link="http://mtv-gaststaette.com/" text="Zur Webseite der Gaststätte" >}}
 {{< /column >}}
 {{< column >}}
 {{< spacer >}}
@@ -40,7 +40,7 @@ Nach dem Spiel lädt unser **Restaurant mit Biergarten** zum Verweilen ein.
 Kanalweg 1\
 76131 Karlsruhe
 
-**Telefon:** [0721 / 698755](tel:+49721698755)\
-**Web:** [www.mtv-gaststaette.com](http://www.mtv-gaststaette.com/)
+**Telefon:** [+49 721 698755](tel:+49721698755)\
+**Web:** [mtv-gaststaette.com](http://mtv-gaststaette.com/)
 
 Für Vereins- und Familienfeiern bitten wir um vorherige Reservierung.

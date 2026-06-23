@@ -11,16 +11,26 @@ Lust, bei uns mitzuspielen? Als Mitglied der Tennisabteilung des MTV Karlsruhe n
 
 {{< cards count=3 >}}
 {{< card >}}
-### Spielen
+{{< img src="/img/placeholder.svg" >}}
+### Plätze & Halle
 Zugang zu 7 Sandplätzen mitten im Grünen und 2 Hallenplätzen für das ganze Jahr.
+{{< spacer 5 >}}
+{{< button link="/anlage" text="Zur Anlage" >}}
 {{< /card >}}
 {{< card >}}
-### Training & Mannschaften
+{{< img src="/img/placeholder.svg" >}}
+### Training & Liga
 Training für alle Spielstärken und die Möglichkeit, in unseren Ligamannschaften mitzuspielen.
+{{< spacer 5 >}}
+{{< button link="/training" text="Zum Training" >}}
+{{< button link="/mannschaften" style="secondary" text="Zu den Mannschaften" >}}
 {{< /card >}}
 {{< card >}}
+{{< img src="/img/placeholder.svg" >}}
 ### Gemeinschaft
-Turniere, Arbeitseinsätze und gesellige Stunden im Restaurant mit Biergarten.
+Turniere, Arbeitseinsätze und gesellige Stunden im Restaurant mit Biergarten. Über den Hauptverein MTV Karlsruhe stehen Ihnen zudem zahlreiche weitere Sport- und Freizeitangebote offen.
+{{< spacer 5 >}}
+{{< button link="https://mtv-karlsruhe.de/" text="Zum MTV Karlsruhe" >}}
 {{< /card >}}
 {{< /cards >}}
 
@@ -70,23 +80,22 @@ Hinzu kommt eine **Arbeitseinsatzgebühr** von **60,00 €** pro Jahr je aktivem
 - **Teilzeitspielberechtigung:** Montag–Freitag bis 16:00 Uhr, Samstag, Sonn- und Feiertage bis 12:00 Uhr.
 - Inhaber:innen des **Karlsruher Passes** erhalten eine Ermäßigung; für den Vereinsbeitrag werden **Bildungsgutscheine** (auch 60plus) akzeptiert.
 
-Maßgeblich ist die offizielle [Beitragsordnung des MTV Karlsruhe](https://www.mtv-karlsruhe.de/mitgliedschaft/beitragsordnung/).
+Maßgeblich ist die offizielle [Beitragsordnung des MTV Karlsruhe](https://mtv-karlsruhe.de/mitgliedschaft/beitragsordnung/).
 
 ## Formulare
 
 Für die Aufnahme brauchen Sie diese Formulare des MTV Karlsruhe (PDF):
 
-- [Aufnahmeantrag Verein](https://www.mtv-karlsruhe.de/wp-content/uploads/2024/09/Aufnahme_neu_Beitrag_ab-2025.pdf) – für neue Mitglieder
-- [Aufnahmeantrag Tennis](https://www.mtv-karlsruhe.de/wp-content/uploads/2025/03/Teaufn_neu.pdf) – für den Eintritt in die Tennisabteilung
+- [Aufnahmeantrag Verein](https://mtv-karlsruhe.de/wp-content/uploads/2024/09/Aufnahme_neu_Beitrag_ab-2025.pdf) – für neue Mitglieder
+- [Aufnahmeantrag Tennis](https://mtv-karlsruhe.de/wp-content/uploads/2025/03/Teaufn_neu.pdf) – für den Eintritt in die Tennisabteilung
 - [SEPA-Mandat für Beitragseinzug](https://mtv-karlsruhe.de/wp-content/uploads/2022/10/SEPA-Mandat.pdf)
 
-Alle Formulare finden Sie auch gesammelt unter [mtv-karlsruhe.de/mitgliedschaft/formulare](https://www.mtv-karlsruhe.de/mitgliedschaft/formulare/).
+Alle Formulare finden Sie auch gesammelt unter [mtv-karlsruhe.de/mitgliedschaft/formulare](https://mtv-karlsruhe.de/mitgliedschaft/formulare/).
 
 ## So werden Sie Mitglied
 
-Schreiben Sie uns einfach eine kurze Nachricht an [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de) – wir melden uns mit allen Unterlagen und Details zur Aufnahme bei Ihnen. Die Mitgliedschaft in der Tennisabteilung erfolgt über den Hauptverein [MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
+Schreiben Sie uns einfach eine kurze Nachricht an [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de) – wir melden uns mit allen Unterlagen und Details zur Aufnahme bei Ihnen. Die Mitgliedschaft in der Tennisabteilung erfolgt über den Hauptverein [MTV Karlsruhe](https://mtv-karlsruhe.de/).
 
 {{< spacer 10 >}}
 
 {{< button link="mailto:tennis@mtv-karlsruhe.de" text="Jetzt anfragen" >}}
-{{< button link="/kontakt" style="secondary" text="Kontakt & Abteilungsleitung" >}}

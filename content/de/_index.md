@@ -14,7 +14,7 @@ Die Tennisabteilung ist mit rund 130 Mitgliedern und vielen aktiven Mannschaften
 
 Unsere Anlage liegt mitten im Grünen am Kanalweg und bietet **7 Sandplätze** sowie **2 Hallenplätze**, die das ganze Jahr über bespielbar sind. Nach dem Spiel lädt unsere [**Gaststätte mit Biergarten**](/gaststaette) zum Verweilen ein.
 
-{{< button link="https://www.mtv-karlsruhe.de/platzbuchung/plan-3/" text="Platz buchen" >}}
+{{< button link="https://mtv-karlsruhe.de/platzbuchung/plan-3/" text="Platz buchen" >}}
 {{< /column >}}
 {{< column >}}
 {{< spacer >}}
@@ -44,7 +44,7 @@ Von den ersten Schlägen bis zum Feinschliff – unser Cheftrainer Lorenzo Sonne
 ### Anlage
 7 Sandplätze und eine Tennishalle. Mitglieder und Gäste buchen bequem online.
 {{< spacer 5 >}}
-{{< button link="/plaetze" text="Zur Anlage" >}}
+{{< button link="/anlage" text="Zur Anlage" >}}
 {{< /card >}}
 {{< /cards >}}
 

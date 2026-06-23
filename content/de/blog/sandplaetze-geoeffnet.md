@@ -7,6 +7,6 @@ author: mtv
 
 Die Freiluftsaison läuft: Seit dem **18. Mai 2026** sind unsere 7 Sandplätze auch für **Gastspielerinnen und Gastspieler** geöffnet.
 
-Buchung und Bezahlung erfolgen bequem über unser Online-Buchungssystem. Die aktuellen Gastpreise und alle Infos zur Buchung finden Sie auf der Seite „Plätze & Buchung“.
+Buchung und Bezahlung erfolgen bequem über unser Online-Buchungssystem. Die aktuellen [Gastpreise und alle Infos zur Anlage](/anlage) finden Sie auf unserer Anlage-Seite.
 
-{{< button link="/plaetze" text="Plätze & Buchung" >}}
+{{< button link="https://mtv-karlsruhe.de/platzbuchung/plan-3/" text="Platz buchen" >}}

@@ -20,14 +20,14 @@ Kanalweg 1
 {{< column >}}
 ## Folge uns
 
-- Instagram: [@mtvkarlsruhe_tennis](https://www.instagram.com/mtvkarlsruhe_tennis)
-- Facebook: [MtvKarlsruheTennis](https://www.facebook.com/MtvKarlsruheTennis)
+- Instagram: [@mtvkarlsruhe_tennis](https://instagram.com/mtvkarlsruhe_tennis)
+- Facebook: [MtvKarlsruheTennis](https://facebook.com/MtvKarlsruheTennis)
 {{< /column >}}
 {{< /columns >}}
 
 ## Zum Hauptverein
 
-Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den gesamten Verein finden Sie auf der Hauptseite des [MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
+Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den gesamten Verein finden Sie auf der Hauptseite des [MTV Karlsruhe](https://mtv-karlsruhe.de/).
 
 ## Anfahrt
 

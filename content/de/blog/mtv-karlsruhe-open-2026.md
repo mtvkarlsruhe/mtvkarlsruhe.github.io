@@ -9,4 +9,4 @@ Unser beliebtes Tennisturnier geht in die nächste Runde: Die **MTV Karlsruhe Op
 
 Freuen Sie sich auf spannende Matches, gute Stimmung und Tennis auf unseren Sandplätzen. Alle Details zur Anmeldung und zum Ablauf finden Sie auf unserer Turnierseite.
 
-{{< button link="/turniere" text="Zu den Turnieren" >}}
+{{< button link="https://tennis.de/spielen/spielbetrieb/turniersuche.html#detail/822579" text="Zur Ausschreibung & Anmeldung" >}}

@@ -9,7 +9,7 @@ Die Tennisabteilung ist mit rund 130 Mitgliedern eine der größten Abteilungen 
 
 ## Teil des MTV Karlsruhe
 
-Die Tennisabteilung ist eine von vielen Abteilungen des Hauptvereins MTV Karlsruhe. Alle Informationen rund um den gesamten Verein finden Sie auf der [Hauptseite des MTV Karlsruhe](https://www.mtv-karlsruhe.de/).
+Die Tennisabteilung ist eine von vielen Abteilungen des Hauptvereins MTV Karlsruhe. Alle Informationen rund um den gesamten Verein finden Sie auf der Hauptseite des [MTV Karlsruhe](https://mtv-karlsruhe.de/).
 
 ## Geschichte
 
@@ -40,4 +40,4 @@ Tennis verbindet – sportlicher Ehrgeiz, Gemeinschaft und Freude am Spiel stehe
 {{< spacer 10 >}}
 
 {{< button link="/mitglied-werden" text="Mitglied werden" >}}
-{{< button link="/kontakt" style="secondary" text="Kontakt & Abteilungsleitung" >}}
+{{< button link="/kontakt" style="secondary" text="Kontakt" >}}

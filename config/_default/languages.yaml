@@ -30,7 +30,7 @@ de:
         url: "/ueber-uns/"
         parent: "verein"
         weight: 1
-        post: "Verein und Geschichte"
+        post: "Verein und Abteilungsleitung"
       - identifier: "aktuelles"
         name: "Aktuelles"
         url: "/blog/"
@@ -39,27 +39,33 @@ de:
         post: "Neuigkeiten aus der Abteilung"
       - identifier: "plaetze"
         name: "Anlage"
-        url: "/plaetze/"
+        url: "/anlage/"
         parent: "verein"
         weight: 3
-        post: "Unsere Plätze und die Anlage"
+        post: "Frei- und Hallenplätze"
       - identifier: "gaststaette"
         name: "Gaststätte"
         url: "/gaststaette/"
         parent: "verein"
         weight: 4
         post: "Hausgemachte Küche und Biergarten"
+      - identifier: "mitgliedschaft"
+        name: "Mitgliedschaft"
+        url: "/mitglied-werden/"
+        parent: "verein"
+        weight: 5
+        post: "Vorteile, Beiträge und Formulare"
       - identifier: "arbeitseinsaetze"
         name: "Arbeitseinsätze"
         url: "/arbeitseinsaetze/"
         parent: "verein"
-        weight: 5
-        post: "Gemeinsam die Anlage pflegen"
+        weight: 6
+        post: "Pflege und Erhalt der Anlage"
       - identifier: "hauptverein"
         name: "MTV Karlsruhe"
-        url: "https://www.mtv-karlsruhe.de/"
+        url: "https://mtv-karlsruhe.de/"
         parent: "verein"
-        weight: 6
+        weight: 7
         post: "Zum Hauptverein"
       - identifier: "tennis"
         name: "Tennis"
@@ -75,13 +81,13 @@ de:
         url: "/jugend/"
         parent: "tennis"
         weight: 2
-        post: "Tennis für Kinder und Jugendliche"
+        post: "Kinder und Jugendliche"
       - identifier: "training"
         name: "Training"
         url: "/training/"
         parent: "tennis"
         weight: 3
-        post: "Für Anfänger und Fortgeschrittene"
+        post: "Anfänger und Fortgeschrittene"
       - identifier: "turniere"
         name: "Turniere"
         url: "/turniere/"
@@ -90,7 +96,7 @@ de:
         post: "MTV Karlsruhe Open & Karl-Cup"
       - identifier: "platzbuchung"
         name: "Platzbuchung"
-        url: "https://www.mtv-karlsruhe.de/platzbuchung/"
+        url: "https://mtv-karlsruhe.de/platzbuchung/"
         weight: 3
       - identifier: "kontakt"
         name: "Kontakt"

@@ -1,0 +1,77 @@
+@use "variables";
+
+// NOTE: Project override of the theme's _buttons.scss. Keep in sync with the
+// theme version if it changes; the external-link arrow is the project addition.
+
+// Default button style
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 47px;
+    background-color: var(--primary-700);
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.7px;
+
+    &:hover,
+    &:active {
+        color: var(--white);
+        background-color: var(--primary-800);
+    }
+    &.secondary {
+        background-color: var(--primary-400);
+        &:hover,
+        &:active {
+            color: var(--white);
+            background-color: var(--primary-500);
+        }
+    }
+    &.tertiary {
+        background-color: var(--primary-400);
+        &:hover {
+            color: var(--white);
+            background-color: var(--primary-500);
+        }
+        &:active {
+            color: var(--black);
+            background-color: var(--white);
+        }
+    }
+
+    // Outbound buttons get the same up-right arrow as outbound text links.
+    // Match target="_blank" (only set on genuinely external links by the button
+    // shortcode) rather than the href, so internal CTAs that absLangURL renders
+    // as absolute URLs (e.g. the "Mitglied werden" button) don't get an arrow.
+    &[target="_blank"]::after {
+        content: "";
+        display: inline-block;
+        width: 0.7em;
+        height: 0.7em;
+        margin-left: 0.4em;
+        vertical-align: top;
+        background-color: currentColor;
+        -webkit-mask: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 8.778 6.667-6.666M1 1h8v8' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+        mask: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 8.778 6.667-6.666M1 1h8v8' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+    }
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media (min-width: variables.$min-desktop) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.button + .button {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @media (min-width: variables.$min-desktop) {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,53 @@
+// Specific rules to page content.
+// NOTE: Project override of the theme's _content.scss. Keep the theme rules
+// below in sync if the theme version changes; the outbound-link arrow at the
+// bottom is the project addition.
+.content {
+    > * {
+        max-width: var(--content-width);
+    }
+
+    .full-width,
+    div,
+    iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    // Code block restriction.
+    div.highlight {
+        max-width: var(--content-width);
+    }
+
+    // Stops links pushing out container.
+    a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    // Fixes nested UL spacing - see TOC.
+    ul ul {
+        margin-top: 12px;
+    }
+
+    // Outbound links get the same up-right arrow used in the header menu.
+    // Excludes styled buttons and image/logo links (e.g. sponsors).
+    a[href^="http"]:not(.button):not(:has(img))::after {
+        content: "";
+        display: inline-block;
+        width: 0.7em;
+        height: 0.7em;
+        margin-left: 0.25em;
+        vertical-align: middle;
+        background-color: currentColor;
+        -webkit-mask: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 8.778 6.667-6.666M1 1h8v8' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+        mask: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='transparent' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 8.778 6.667-6.666M1 1h8v8' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+    }
+}
