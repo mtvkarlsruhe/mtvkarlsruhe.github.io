@@ -11,7 +11,7 @@ Die MTV Gaststätte ist der Treffpunkt für unsere Mitglieder und Freunde – vo
 {{< column >}}
 ## Hausgemachte Küche
 
-In angenehmem Ambiente am Kanalweg, mitten im Grünen, erwartet euch frische, hausgemachte Küche mit regionalen und mediterranen Akzenten. Auf der Karte stehen ein wechselnder Mittagstisch, saisonale Gerichte am Abend sowie Spezialitäten vom Grill.
+In angenehmem Ambiente am Kanalweg, mitten im Grünen im Hardtwald, erwartet euch frische, hausgemachte Küche mit regionalen und mediterranen Akzenten. Auf der Karte stehen ein wechselnder Mittagstisch, saisonale Gerichte am Abend sowie Spezialitäten vom Grill.
 
 Nach dem Spiel lädt unser **Restaurant mit Biergarten** zum Verweilen ein.
 

@@ -4,7 +4,7 @@ description: 7 Sandplätze und 2 Hallenplätze beim MTV Karlsruhe. Buchung und B
 ---
 
 {{< intro >}}
-Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen sowie 2 Hallenplätze für die kalte Jahreszeit und schlechtes Wetter – so können Sie das ganze Jahr über spielen.
+Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen im Hardtwald sowie 2 Hallenplätze für die kalte Jahreszeit und schlechtes Wetter – so können Sie das ganze Jahr über spielen.
 {{< /intro >}}
 
 ## Freie Sandplätze
