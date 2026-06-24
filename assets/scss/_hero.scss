@@ -14,12 +14,19 @@
         height: 300px;
     }
 
+    // `<picture>` wrapper + its `<img>` both fill the banner; the image is
+    // sized with object-fit to mirror the old background-size: cover behaviour.
     &__bg {
         position: absolute;
         inset: 0;
-        background-position: center 30%;
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+        }
     }
 
     // Gradient overlay keeps the overlaid text legible and anchors the credit.

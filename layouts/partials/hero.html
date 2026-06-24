@@ -1,12 +1,39 @@
 {{- /* Full-bleed hero banner. Tall on the homepage, cropped to a band on
-       subpages (driven by the `hero--home` modifier). Background image is
-       Hugo-processed to an optimized webp with a jpg fallback. */ -}}
+       subpages (driven by the `hero--home` modifier). The background photo is
+       rendered as a responsive <img> so the browser can pick the smallest
+       sufficient size per device and discover the LCP image early. Hugo
+       generates AVIF, WebP and JPEG variants at several widths; the source is
+       3200x2400 so we never upscale past 2560w. */ -}}
 {{- $img := resources.Get "images/hero-court-aerial.jpg" -}}
 {{- if $img -}}
-  {{- $webp := $img.Resize "2400x webp q82" -}}
-  {{- $jpg := $img.Resize "2400x q82" -}}
+  {{- $widths := slice 768 1280 1920 2560 -}}
+  {{- $avif := slice -}}
+  {{- $webp := slice -}}
+  {{- $jpg := slice -}}
+  {{- range $widths -}}
+    {{- $a := $img.Resize (printf "%dx avif q55" .) -}}
+    {{- $w := $img.Resize (printf "%dx webp q72" .) -}}
+    {{- $j := $img.Resize (printf "%dx q72" .) -}}
+    {{- $avif = $avif | append (printf "%s %dw" $a.RelPermalink $a.Width) -}}
+    {{- $webp = $webp | append (printf "%s %dw" $w.RelPermalink $w.Width) -}}
+    {{- $jpg = $jpg | append (printf "%s %dw" $j.RelPermalink $j.Width) -}}
+  {{- end -}}
+  {{- $fallback := $img.Resize "1280x q72" -}}
   <section class="hero{{ if .IsHome }} hero--home{{ end }}">
-    <div class="hero__bg" style="background-image: url('{{ $jpg.RelPermalink }}'); background-image: image-set(url('{{ $webp.RelPermalink }}') type('image/webp'), url('{{ $jpg.RelPermalink }}') type('image/jpeg'));"></div>
+    <picture class="hero__bg">
+      <source type="image/avif" srcset="{{ delimit $avif ", " }}" sizes="100vw">
+      <source type="image/webp" srcset="{{ delimit $webp ", " }}" sizes="100vw">
+      <img
+        src="{{ $fallback.RelPermalink }}"
+        srcset="{{ delimit $jpg ", " }}"
+        sizes="100vw"
+        width="{{ $fallback.Width }}"
+        height="{{ $fallback.Height }}"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+        loading="eager">
+    </picture>
     {{- if .IsHome -}}
     <div class="hero__inner">
       <p class="hero__eyebrow">Tennisabteilung</p>
