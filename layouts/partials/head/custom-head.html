@@ -1,0 +1,43 @@
+{{/* Canonical URL for every page */}}
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{/* Structured data (JSON-LD): SportsClub on the home page for local SEO */}}
+{{- if .IsHome }}
+{{- $logo := absURL "img/social-share.png" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsClub",
+  "name": "MTV Karlsruhe – Tennisabteilung",
+  "sport": "Tennis",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ $logo }}",
+  "image": "{{ $logo }}",
+  "description": "Tennisabteilung des MTV Karlsruhe – rund 130 Mitglieder, 7 Sandplätze und 2 Hallenplätze am Kanalweg mitten im Grünen im Hardtwald.",
+  "telephone": "+49 721 691173",
+  "email": "tennis@mtv-karlsruhe.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kanalweg 1",
+    "postalCode": "76131",
+    "addressLocality": "Karlsruhe",
+    "addressRegion": "Baden-Württemberg",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.0229711,
+    "longitude": 8.4179256
+  },
+  "parentOrganization": {
+    "@type": "SportsOrganization",
+    "name": "Männerturnverein Karlsruhe 1881 e.V.",
+    "url": "https://mtv-karlsruhe.de/"
+  },
+  "sameAs": [
+    "https://instagram.com/mtvkarlsruhe_tennis",
+    "https://facebook.com/MtvKarlsruheTennis"
+  ]
+}
+</script>
+{{- end }}
