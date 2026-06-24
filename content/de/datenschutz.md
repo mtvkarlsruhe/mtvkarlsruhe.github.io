@@ -11,7 +11,7 @@ Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Nachfolgend informiere
 
 ## Verantwortlicher
 
-Verantwortlich für die Datenverarbeitung auf dieser Website ist der MTV Karlsruhe e.V. – Tennisabteilung, Kanalweg 1, 76133 Karlsruhe, E-Mail: [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de). Die vollständigen Kontaktdaten finden Sie im [Impressum](/impressum/).
+Verantwortlich für die Datenverarbeitung auf dieser Website ist der MTV Karlsruhe e.V. – Tennisabteilung, Kanalweg 1, 76131 Karlsruhe, E-Mail: [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de). Die vollständigen Kontaktdaten finden Sie im [Impressum](/impressum/).
 
 ## Hosting
 

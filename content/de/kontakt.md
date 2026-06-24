@@ -13,7 +13,7 @@ Sie haben Fragen zur Tennisabteilung, möchten Mitglied werden oder in einer Man
 
 MTV Karlsruhe – Tennisabteilung
 Kanalweg 1
-76133 Karlsruhe
+76131 Karlsruhe
 
 **E-Mail:** [tennis@mtv-karlsruhe.de](mailto:tennis@mtv-karlsruhe.de)
 {{< /column >}}
@@ -31,4 +31,4 @@ Diese Seite ist der Auftritt der Tennisabteilung. Alle Informationen rund um den
 
 ## Anfahrt
 
-{{< iframe src="https://maps.google.com/maps?q=MTV+Karlsruhe+Tennis,+Kanalweg+1,+76133+Karlsruhe&output=embed" title="Karte der Tennisanlage MTV Karlsruhe am Kanalweg 1" height="450px" >}}
+{{< iframe src="https://maps.google.com/maps?q=MTV+Karlsruhe+Tennis,+Kanalweg+1,+76131+Karlsruhe&output=embed" title="Karte der Tennisanlage MTV Karlsruhe am Kanalweg 1" height="450px" >}}
