@@ -57,6 +57,14 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Subset web fonts to glyphs actually used
+        run: |
+          pip install fonttools brotli
+          python scripts/subset-fonts.py public
       - name: Build Pagefind search index
         run: npx -y pagefind --site public
       - name: Upload artifact
