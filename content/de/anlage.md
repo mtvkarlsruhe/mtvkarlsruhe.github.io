@@ -7,12 +7,6 @@ description: 7 Sandplätze und 2 Hallenplätze beim MTV Karlsruhe. Buchung und B
 Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen im Hardtwald sowie 2 Hallenplätze für die kalte Jahreszeit und schlechtes Wetter – so können Sie das ganze Jahr über spielen.
 {{< /intro >}}
 
-## Freie Sandplätze
-
-7 gepflegte Sandplätze stehen in der Freiluftsaison zur Verfügung. Buchung und Bezahlung erfolgen **ausschließlich über unser Online-Buchungssystem**.
-
-{{< button link="https://mtv-karlsruhe.de/platzbuchung/plan-3/" text="Freiplatz buchen" >}}
-
 ## Preise für Gäste
 
 {{< responsive_table >}}
@@ -21,6 +15,12 @@ Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen im Hardtw
 | Als Gast eines Vereinsmitglieds | 8 Euro |
 | Als Gast ohne Mitgliedschaft | 16 Euro |
 {{< /responsive_table >}}
+
+## Freie Sandplätze
+
+7 gepflegte Sandplätze stehen in der Freiluftsaison zur Verfügung. Buchung und Bezahlung erfolgen **ausschließlich über unser Online-Buchungssystem**.
+
+{{< button link="https://mtv-karlsruhe.de/platzbuchung/plan-3/" text="Freiplatz buchen" >}}
 
 ## Tennishalle (Winter)
 
