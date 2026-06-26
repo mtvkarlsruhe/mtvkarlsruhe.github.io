@@ -1,7 +1,20 @@
 // Specific rules to page content.
 // NOTE: Project override of the theme's _content.scss. Keep the theme rules
 // below in sync if the theme version changes; the outbound-link arrow at the
-// bottom is the project addition.
+// bottom and the heading-hyphenation block below are the project additions.
+
+// Keep long German compound words (e.g. "Datenschutzerklärung",
+// "Vertretungsberechtigter") from overflowing their container on narrow
+// screens. `hyphens: auto` relies on <html lang="de"> for correct syllable
+// breaks; `overflow-wrap` is the safety net for any word still too long to
+// hyphenate. Both only activate when a word doesn't fit, so headings on wider
+// screens are unaffected.
+.title,
+.content :is(h1, h2, h3, h4, h5, h6) {
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
 .content {
     > * {
         max-width: var(--content-width);
