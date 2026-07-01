@@ -43,30 +43,30 @@ de:
         parent: "verein"
         weight: 3
         post: "Frei- und Hallenplätze"
-      - identifier: "gaststaette"
-        name: "Gaststätte"
-        url: "/gaststaette/"
-        parent: "verein"
-        weight: 4
-        post: "Hausgemachte Küche und Biergarten"
       - identifier: "mitgliedschaft"
         name: "Mitgliedschaft"
         url: "/mitglied-werden/"
         parent: "verein"
-        weight: 5
+        weight: 4
         post: "Vorteile, Beiträge und Formulare"
       - identifier: "arbeitseinsaetze"
         name: "Arbeitseinsätze"
         url: "/arbeitseinsaetze/"
         parent: "verein"
-        weight: 6
+        weight: 5
         post: "Pflege und Erhalt der Anlage"
       - identifier: "hauptverein"
         name: "MTV Karlsruhe"
         url: "https://mtv-karlsruhe.de/"
         parent: "verein"
-        weight: 7
+        weight: 6
         post: "Zum Hauptverein"
+      - identifier: "gaststaette"
+        name: "Gaststätte"
+        url: "/gaststaette/"
+        parent: "verein"
+        weight: 7
+        post: "Hausgemachte Küche und Biergarten"
       - identifier: "tennis"
         name: "Tennis"
         weight: 2
