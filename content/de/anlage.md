@@ -33,6 +33,20 @@ Einzelstunden buchen Sie bequem über unser Online-Buchungssystem.
 
 {{< button link="https://mtv-karlsruhe.de/platzbuchung/plan/" text="Hallenplatz buchen" >}}
 
+## Platzpflege
+
+Unsere Sandplätze bleiben nur bespielbar, wenn alle mithelfen. Bitte halten Sie sich an folgende Regeln:
+
+- **Vor dem Spiel wässern:** Wässern Sie den Platz ausreichend, damit die Sandoberfläche gebunden und nicht staubig ist. Nur auf einen zu trockenen Platz darf nicht gespielt werden.
+- **Geeignete Schuhe:** Betreten Sie die Sandplätze ausschließlich mit Sandplatzschuhen (glattes Profil). Schuhe mit grobem Profil beschädigen die Oberfläche.
+- **Nach dem Spiel abziehen:** Ziehen Sie den gesamten Platz nach jeder Spielstunde mit dem Schleppnetz ab – von der Mitte kreisförmig oder in Bahnen nach außen, sodass keine Stellen ausgelassen werden.
+- **Linien kehren:** Kehren Sie anschließend die Linien mit dem Linienbesen sauber, damit sie sichtbar bleiben.
+- **Netzbereich:** Ziehen Sie auch den Bereich unter dem Netz ab und stellen Sie das Schleppnetz nach Gebrauch ordentlich zurück.
+- **Löcher ausbessern:** Treten Sie durch Bremsen entstandene Löcher und unebene Stellen wieder eben.
+- **Spielzeit einhalten:** Beenden Sie das Spiel rechtzeitig, damit das Abziehen und Pflegen noch innerhalb der gebuchten Stunde erfolgt.
+
+Bei Fragen zur Platzpflege oder gemeldeten Schäden wenden Sie sich bitte an die Geschäftsstelle.
+
 ## Eindrücke
 
 <!-- TODO: Platzhalter durch echte Fotos der Anlage ersetzen (Sandplätze, Halle, Clubhaus). Bilder z. B. unter /img/anlage/ ablegen. -->
