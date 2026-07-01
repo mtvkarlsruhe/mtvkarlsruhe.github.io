@@ -68,6 +68,7 @@ Die Mitgliedschaft in der Tennisabteilung läuft über den Hauptverein MTV Karls
 | Ehepaare | 175,00 € |
 | Passive | 30,00 € |
 | Teilzeitspieler:innen (ab 18 Jahre) | 75,00 € |
+| Schnuppermitgliedschaft | TODO |
 
 {{< /responsive_table >}}
 
