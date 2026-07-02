@@ -1,36 +1,116 @@
 {{- /*
-  Mannschaften — reads entries from data/mannschaften.yaml and renders a card
-  per team with the Mannschaftsführer:in. Tabellen und Ergebnisse liefert das
-  tennis.de-Widget weiter unten auf der Seite (Shortcode `mannschaftswidget`).
+  Mannschaften — a slideshow that cycles through individual team photos. Below
+  each photo, a footer shows the team info: name, Mannschaftsführer:in, and
+  phone number. Data comes from data/mannschaften.yaml. Tables and results are
+  provided by the tennis.de widget further down the page (shortcode
+  `mannschaftswidget`).
 
   Usage: {{< mannschaften >}}
 
-  Note: the phone number is only shown when `phone` is set in the data file —
-  vorerst bleibt es leer (anonym).
+  Notes:
+    - When `photo` is missing from a record, the placeholder image is shown.
+    - The phone number appears only when `phone` is set.
+    - Controlled via arrow buttons, dot navigation, and arrow keys (←/→).
+    - Degrades to a scrollable list without JavaScript (fallback).
 
-  Rules are scoped under .teams-* parents so they outweigh the theme's
+  Rules are scoped under .teams-slideshow* parents so they outweigh the theme's
   `.content div { width:100% }` rule.
 */ -}}
 {{- $teams := site.Data.mannschaften -}}
 {{- if $teams -}}
-<div class="teams-grid">
-  {{- range $t := $teams -}}
-  <div class="teams-grid__card">
-    <h3 class="teams-grid__name">{{ $t.name }}</h3>
-    {{- with $t.fuehrer }}
-    <p class="teams-grid__mf">
-      <span class="teams-grid__label">Mannschaftsführer:in</span>
-      {{ . }}{{ with $t.phone }} · <a href="tel:{{ . | replaceRE `[^+0-9]` `` }}">{{ . }}</a>{{ end }}
-    </p>
-    {{- end }}
+{{- $id := printf "teams-slideshow-%d" .Ordinal -}}
+<div class="teams-slideshow" id="{{ $id }}" data-teams-slideshow>
+  <div class="teams-slideshow__viewport">
+    <ul class="teams-slideshow__track">
+      {{- range $i, $t := $teams -}}
+      {{- $photo := $t.photo | default "/img/placeholder.svg" -}}
+      <li class="teams-slideshow__slide" data-slide="{{ $i }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
+        <figure class="teams-slideshow__figure">
+          <img class="teams-slideshow__img" src="{{ $photo | relURL }}" alt="Mannschaftsfoto {{ $t.name }}" loading="lazy">
+          <figcaption class="teams-slideshow__footer">
+            <span class="teams-slideshow__name">{{ $t.name }}</span>
+            {{- with $t.fuehrer }}
+            <span class="teams-slideshow__mf">
+              <span class="teams-slideshow__label">Mannschaftsführer:in</span>
+              {{ . }}
+            </span>
+            {{- end }}
+            {{- with $t.phone }}
+            <a class="teams-slideshow__phone" href="tel:{{ . | replaceRE `[^+0-9]` `` }}">{{ . }}</a>
+            {{- end }}
+          </figcaption>
+        </figure>
+      </li>
+      {{- end -}}
+    </ul>
   </div>
-  {{- end -}}
+
+  <button type="button" class="teams-slideshow__nav teams-slideshow__nav--prev" data-prev aria-label="Vorheriges Team" hidden>&lsaquo;</button>
+  <button type="button" class="teams-slideshow__nav teams-slideshow__nav--next" data-next aria-label="Nächstes Team" hidden>&rsaquo;</button>
+
+  <div class="teams-slideshow__dots" role="tablist" aria-label="Mannschaften" hidden>
+    {{- range $i, $t := $teams -}}
+    <button type="button" class="teams-slideshow__dot{{ if eq $i 0 }} is-active{{ end }}" data-dot="{{ $i }}" role="tab" aria-label="{{ $t.name }}"{{ if eq $i 0 }} aria-selected="true"{{ end }}></button>
+    {{- end -}}
+  </div>
 </div>
 <style>
-.teams-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1.5rem 0;}
-.teams-grid .teams-grid__card{display:flex;flex-direction:column;gap:.25rem;padding:1rem 1.25rem;border:1px solid #e2e2e2;border-radius:10px;background:#fff;}
-.teams-grid .teams-grid__name{margin:0;font-size:1.15rem;}
-.teams-grid .teams-grid__mf{margin:0;font-size:.95rem;}
-.teams-grid .teams-grid__label{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:#888;}
+.teams-slideshow{position:relative;margin:1.5rem 0;}
+.teams-slideshow .teams-slideshow__viewport{overflow:hidden;border-radius:12px;}
+.teams-slideshow .teams-slideshow__track{display:flex;margin:0;padding:0;list-style:none;transition:transform .4s ease;}
+.teams-slideshow .teams-slideshow__slide{flex:0 0 100%;width:100%;margin:0;}
+.teams-slideshow .teams-slideshow__figure{margin:0;display:flex;flex-direction:column;border:1px solid #e2e2e2;border-radius:12px;overflow:hidden;background:#fff;}
+.teams-slideshow .teams-slideshow__img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#f4f4f4;}
+.teams-slideshow .teams-slideshow__footer{display:flex;flex-direction:column;gap:.25rem;padding:1rem 1.25rem;}
+.teams-slideshow .teams-slideshow__name{font-size:1.2rem;font-weight:700;}
+.teams-slideshow .teams-slideshow__mf{font-size:.95rem;}
+.teams-slideshow .teams-slideshow__label{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:#888;}
+.teams-slideshow .teams-slideshow__phone{font-size:.95rem;}
+.teams-slideshow .teams-slideshow__nav{position:absolute;top:calc(50% - 3rem);transform:translateY(-50%);display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;padding:0;border:none;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;transition:background .2s ease;}
+.teams-slideshow .teams-slideshow__nav:hover{background:rgba(0,0,0,.75);}
+.teams-slideshow .teams-slideshow__nav--prev{left:.75rem;}
+.teams-slideshow .teams-slideshow__nav--next{right:.75rem;}
+.teams-slideshow .teams-slideshow__dots{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem;margin-top:1rem;}
+.teams-slideshow .teams-slideshow__dot{width:.7rem;height:.7rem;padding:0;border:none;border-radius:50%;background:#cfcfcf;cursor:pointer;transition:background .2s ease,transform .2s ease;}
+.teams-slideshow .teams-slideshow__dot.is-active{background:#333;transform:scale(1.25);}
+/* Fallback without JS: slides as a horizontally scrollable list */
+.teams-slideshow:not([data-ready]) .teams-slideshow__viewport{overflow-x:auto;}
+.teams-slideshow:not([data-ready]) .teams-slideshow__track{transition:none;}
+.teams-slideshow:not([data-ready]) .teams-slideshow__slide{flex-basis:85%;margin-right:1rem;}
 </style>
+<script>
+(function(){
+  var root=document.getElementById("{{ $id }}");
+  if(!root)return;
+  var track=root.querySelector(".teams-slideshow__track");
+  var slides=root.querySelectorAll(".teams-slideshow__slide");
+  var dots=root.querySelectorAll("[data-dot]");
+  var prev=root.querySelector("[data-prev]");
+  var next=root.querySelector("[data-next]");
+  if(!track||slides.length<2){return;}
+  root.dataset.ready="";
+  prev.hidden=false;next.hidden=false;
+  var dotsWrap=root.querySelector(".teams-slideshow__dots");
+  if(dotsWrap)dotsWrap.hidden=false;
+  var current=0;
+  function go(i){
+    current=(i+slides.length)%slides.length;
+    track.style.transform="translateX("+(-current*100)+"%)";
+    for(var s=0;s<slides.length;s++){slides[s].setAttribute("aria-hidden",s===current?"false":"true");}
+    for(var d=0;d<dots.length;d++){
+      var active=d===current;
+      dots[d].classList.toggle("is-active",active);
+      if(active){dots[d].setAttribute("aria-selected","true");}else{dots[d].removeAttribute("aria-selected");}
+    }
+  }
+  prev.addEventListener("click",function(){go(current-1);});
+  next.addEventListener("click",function(){go(current+1);});
+  for(var d=0;d<dots.length;d++){(function(idx){dots[idx].addEventListener("click",function(){go(idx);});})(d);}
+  root.addEventListener("keydown",function(e){
+    if(e.key==="ArrowLeft"){go(current-1);}
+    else if(e.key==="ArrowRight"){go(current+1);}
+  });
+  go(0);
+})();
+</script>
 {{- end -}}

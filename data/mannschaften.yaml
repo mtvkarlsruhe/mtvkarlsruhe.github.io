@@ -6,6 +6,8 @@
 #   liga     – Spielklasse / Gruppe
 #   fuehrer  – Mannschaftsführer:in
 #   phone    – Telefonnummer (vorerst leer lassen → wird nicht angezeigt)
+#   photo    – Mannschaftsfoto (Pfad unter /static, z. B. /img/mannschaften/damen-1.jpg;
+#              leer lassen → Platzhalterbild wird angezeigt)
 #   tabelle  – Link zur Tabelle (groupPage)
 #   ergebnisse – Link zur Mannschaftsseite mit Spieltermine/Ergebnissen (teamPortrait)
 
@@ -13,6 +15,7 @@
   liga: "1. Bezirksklasse · Gr. 027"
   fuehrer: "Lina Lepp"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=27"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3556746&championship=B2+S+2026"
 
@@ -20,6 +23,7 @@
   liga: "2. Bezirksklasse · Gr. 030"
   fuehrer: "Nina Langendorf"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=30"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3615796&championship=B2+S+2026"
 
@@ -27,6 +31,7 @@
   liga: "Badenliga · Gr. 030"
   fuehrer: "Martina Buchwald"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=Baden+S+2026&group=30"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3611170&championship=Baden+S+2026"
 
@@ -34,6 +39,7 @@
   liga: "1. Bezirksklasse · Gr. 004"
   fuehrer: "Maximilian Eland"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=4"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3556380&championship=B2+S+2026"
 
@@ -41,6 +47,7 @@
   liga: "2. Bezirksklasse · Gr. 010"
   fuehrer: "Alexander Vogel"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=10"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3556888&championship=B2+S+2026"
 
@@ -48,6 +55,7 @@
   liga: "2. Bezirksklasse · Gr. 009"
   fuehrer: "Konstantin Schneider"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=9"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3556711&championship=B2+S+2026"
 
@@ -55,6 +63,7 @@
   liga: "1. Bezirksliga · Gr. 054"
   fuehrer: "Stefan Buchwald"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=54"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3556929&championship=B2+S+2026"
 
@@ -62,5 +71,6 @@
   liga: "2. Bezirksliga · Gr. 056"
   fuehrer: "Matthias Klein"
   phone: ""
+  photo: ""
   tabelle: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/groupPage?championship=B2+S+2026&group=56"
   ergebnisse: "https://baden.liga.nu/cgi-bin/WebObjects/nuLigaTENDE.woa/wa/teamPortrait?team=3556510&championship=B2+S+2026"
