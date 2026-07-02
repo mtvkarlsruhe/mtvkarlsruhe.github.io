@@ -7,29 +7,37 @@ description: 7 Sandplätze und 2 Hallenplätze beim MTV Karlsruhe. Buchung und B
 Unsere Tennisanlage am Kanalweg bietet 7 Sandplätze mitten im Grünen im Hardtwald sowie 2 Hallenplätze für die kalte Jahreszeit und schlechtes Wetter – so können Sie das ganze Jahr über spielen.
 {{< /intro >}}
 
-## Preise für Gäste
+## Freie Sandplätze
+
+7 gepflegte Sandplätze stehen in der Freiluftsaison zur Verfügung. **Für Mitglieder der Tennis-Abteilung ist die Nutzung kostenlos.** Die Buchung erfolgt **ausschließlich über unser Online-Buchungssystem**.
+
+### Preise
 
 {{< responsive_table >}}
 | Spielerin / Spieler | Preis pro Platz und Stunde |
 | ------------------- | -------------------------- |
-| Als Gast eines Vereinsmitglieds | 8 Euro |
-| Als Gast ohne Mitgliedschaft | 16 Euro |
+| Mitglieder (Tennis-Abteilung) | 0 Euro |
+| Gast eines Mitgliedes (Tennis-Abteilung) | 8 Euro |
+| Gast | 16 Euro |
 {{< /responsive_table >}}
-
-## Freie Sandplätze
-
-7 gepflegte Sandplätze stehen in der Freiluftsaison zur Verfügung. Buchung und Bezahlung erfolgen **ausschließlich über unser Online-Buchungssystem**.
 
 {{< button link="https://mtv-karlsruhe.de/platzbuchung/plan-3/" text="Freiplatz buchen" >}}
 
 ## Tennishalle (Winter)
 
-Die 2 Hallenplätze sind im Winter und bei schlechtem Wetter bespielbar – wahlweise als Winterabonnement oder als Einzelstunde. Für ein Winterabo wenden Sie sich bitte an die Geschäftsstelle:
+Die 2 Hallenplätze sind im Winter und bei schlechtem Wetter bespielbar – wahlweise als Winterabonnement oder als Einzelstunde. **Als Mitglied der Tennis-Abteilung buchen Sie die Hallenplätze zu vergünstigten Preisen** gegenüber Gästen. Für ein Winterabo wenden Sie sich bitte an die Geschäftsstelle:
 
 - **Telefon:** [+49 721 691173](tel:+49721691173)
 - **Öffnungszeiten:** dienstags 9:00–12:00 Uhr und 15:00–17:00 Uhr (Winter) bzw. bis 18:00 Uhr (Sommer) sowie nach Vereinbarung
 
-Einzelstunden buchen Sie bequem über unser Online-Buchungssystem.
+### Preise
+
+{{< responsive_table >}}
+| Spielerin / Spieler | Preis pro Platz und Stunde |
+| ------------------- | -------------------------- |
+| Mitglieder (Tennis-Abteilung) | 16 Euro |
+| Gast | 20 Euro |
+{{< /responsive_table >}}
 
 {{< button link="https://mtv-karlsruhe.de/platzbuchung/plan/" text="Hallenplatz buchen" >}}
 

@@ -13,7 +13,7 @@ Lust, bei uns mitzuspielen? Als Mitglied der Tennisabteilung des MTV Karlsruhe n
 {{< card >}}
 {{< img src="/img/placeholder.svg" >}}
 ### Plätze & Halle
-Zugang zu 7 Sandplätzen mitten im Grünen im Hardtwald und 2 Hallenplätzen für das ganze Jahr.
+Zugang zu 7 Sandplätzen mitten im Grünen im Hardtwald und 2 Hallenplätzen für das ganze Jahr – die Sandplätze nutzen Sie als Mitglied kostenlos, die Hallenplätze buchen Sie zu vergünstigten Preisen.
 {{< spacer 5 >}}
 {{< button link="/anlage" text="Zur Anlage" >}}
 {{< /card >}}
